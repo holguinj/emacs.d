@@ -1,5 +1,5 @@
 (defvar my-packages
-  '(clojure-mode clojure-test-mode cider better-defaults paredit eldoc smex cl ido-ubiquitous git-gutter-fringe magit anaphora change-inner erc-tweet expand-region hy-mode diminish flx-ido flycheck puppet-mode)
+  '(clojurescript-mode clojure-mode clojure-test-mode cider better-defaults paredit eldoc smex cl ido-ubiquitous git-gutter-fringe magit anaphora change-inner erc-tweet expand-region hy-mode diminish flx-ido flycheck puppet-mode)
   "A list of packages to ensure are installed at launch.")
 
 ;; M-h v package-activated-list RET
@@ -25,4 +25,12 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+;; Not strictly package management, but hey:
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setq exec-path (append exec-path '("/usr/local/bin")))
 
+
+;; Load Powerline
+;;(load "~/.emacs.d/lib/powerline/powerline-themes")
+;;(load "~/.emacs.d/lib/powerline/powerline-separators")
+;;(load "~/.emacs.d/lib/powerline/powerline")

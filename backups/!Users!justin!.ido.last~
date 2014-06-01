@@ -1,0 +1,268 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/justin/src/rssfunnel/src/" . "rssfunnel/")
+ ("/Users/justin/src/rssfunnel/" . "src/")
+ ("/Users/justin/src/gooey/src/" . "gooey/")
+ ("/Users/justin/src/gooey/" . "src/")
+ ("/Users/justin/src/kanren-island/" . "src/")
+ ("/Users/justin/src/kanren-island/src/" . "kanren_island/")
+ ("/Users/justin/dotfiles/emacs-live-packs/justin-pack/" . "config/")
+ ("/Users/justin/src/clj-rss/test/" . "clj_rss/")
+ ("/Users/justin/.live-packs/justin-pack/" . "config/")
+ ("/Users/justin/.live-packs/" . "justin-pack/")
+ ("/Users/justin/.emacs.d/elpa/" . "goto-last-change-1.2/")
+ ("/Users/justin/.emacs.d/" . "elpa/")
+ ("/Users/justin/src/nand2tetris/projects/10/" . "ExpressionlessTest/")
+ ("/Users/justin/src/nand2tetris/projects/" . "10/")
+ ("/Users/justin/src/nand2tetris/" . "projects/")
+ ("/Users/justin/src/clj-rss/src/" . "clj_rss/")
+ ("/Users/justin/src/clj-rss/" . "test/")
+ ("/Users/justin/src/hack-clj/src/" . "hack_clj/")
+ ("/Users/justin/src/hack-clj/" . "src/")
+ ("/Users/justin/src/new-wave/src/" . "new_wave/")
+ ("/Users/justin/src/new-wave/" . "src/")
+ ("/Users/justin/src/offline-4clojure/src/" . "offline_4clojure/")
+ ("/Users/justin/src/offline-4clojure/" . "src/")
+ ("/Users/justin/src/trimet-tracker/" . "src/")
+ ("/Users/justin/src/trimet-cljs/src/" . "trimet_cljs/")
+ ("/Users/justin/src/trimet-cljs/" . "src/")
+ ("/Users/justin/src/exercism/clojure/" . "meetup/")
+ ("/Users/justin/src/exercism/" . "clojure/")
+ ("/Users/justin/src/impress/src/" . "impress/")
+ ("/Users/justin/src/impress/" . "src/")
+ ("/Users/justin/src/fumblemacs/src/" . "fumblemacs/")
+ ("/Users/justin/src/fumblemacs/" . "src/")
+ ("/Users/justin/src/" . "rssfunnel/")
+ ("/Users/justin/dotfiles/emacs-live-packs/" . "justin-pack/")
+ ("/Users/justin/dotfiles/" . "emacs-live-packs/")
+ ("/Users/justin/" . ".emacs.d/")
+ ("/Users/" . "justin/")
+ ("/" . "Users/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/justin/.emacs.d/"
+ "/Users/justin/.emacs.d/config/"
+ "/Users/justin/"
+ "/Users/justin/src/rssfunnel/src/rssfunnel/"
+ "/Users/justin/src/rssfunnel/"
+ "/Users/justin/src/clj-rss/"
+ "/Users/justin/src/gooey/src/gooey/"
+ "/Users/justin/src/gooey/"
+ "/Users/justin/dotfiles/emacs-live-packs/justin-pack/config/"
+ "/Users/justin/src/kanren-island/src/kanren_island/"
+ "/Users/justin/src/kanren-island/"
+ "/Users/justin/src/trimet-tracker/src/"
+ "/Users/justin/src/trimet-cljs/src/trimet_cljs/"
+ "/Users/justin/src/trimet-cljs/"
+ "/Users/justin/Applications/"
+ "/Users/justin/dotfiles/emacs-live-packs/justin-pack/"
+ "/Users/justin/.live-packs/justin-pack/config/"
+ "/Users/justin/.live-packs/justin-pack/"
+ "/Users/justin/src/clj-rss/test/clj_rss/"
+ "/Users/justin/src/clj-rss/src/clj_rss/"
+ "/Users/justin/.emacs.d/elpa/goto-last-change-1.2/"
+ "/Users/justin/src/nand2tetris/projects/10/ExpressionlessTest/"
+ "/Users/justin/src/nand2tetris/projects/10/ArrayTest/"
+ "/Users/justin/src/nand2tetris/projects/10/Square/"
+ "/Users/justin/src/hack-clj/"
+ "/Users/justin/src/hack-clj/src/hack_clj/"
+ "/Users/justin/src/hy-euler/"
+ "/Users/justin/src/offline-4clojure/src/offline_4clojure/"
+ "/Users/justin/src/new-wave/src/new_wave/"
+ "/Users/justin/src/new-wave/"
+ "/Users/justin/src/trimet-tracker/"
+ "/Users/justin/src/exercism/clojure/meetup/"
+ "/Users/justin/src/exercism/clojure/etl/"
+ "/Users/justin/src/exercism/clojure/leap/"
+ "/Users/justin/src/exercism/clojure/robot-name/"
+ "/Users/justin/src/exercism/clojure/grade-school/"
+ "/Users/justin/src/exercism/clojure/word-count/"
+ "/Users/justin/src/impress/src/impress/"
+ "/Users/justin/src/impress/"
+ "/Users/justin/Dropbox/"
+ "/Users/justin/src/fumblemacs/src/fumblemacs/"
+ "/Users/justin/src/fumblemacs/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "gui-settings.el"
+ "package-management.el"
+ ".package-management.el.swp"
+ "demo.org"
+ "util.clj"
+ "core.clj"
+ "project.clj"
+ "paredit-config.el"
+ "core.clj{core.clj^ | core.cljs | core_test.clj}"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/justin/.emacs.d/" (21386 15718 0 0) "places" "lib/" "init.el~" "init.el" "elpa/" "config/" "backups/" "auto-save-list/" ".init.el.un~" ".init.el.swp" ".gitmodules" ".gitignore" ".git/" "..gitignore.un~" "../" "./")
+
+ ("/Users/justin/.emacs.d/config/" (21386 15717 0 0) "package-management.el~" "package-management.el" "key-bindings.el" "ido-config.el" "gui-settings.el" ".package-management.el.un~" ".package-management.el.swp" ".key-bindings.el.un~" ".key-bindings.el.swp" ".ido-config.el.un~" ".ido-config.el.swp" ".gui-settings.el.un~" ".gui-settings.el.swp" "../" "./")
+
+ ("/Users/justin/" (21386 15718 0 0) "yankring_history_v2.txt" "src/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "bin/" "Applications/" "anaconda/" ".zshrc.pre-oh-my-zsh" ".zshrc.bak" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zlogin" ".zcompdump-jAir-5.0.2" ".xbmc/" ".Xauthority" ".x.un~" ".weechat/" ".vimrc.bak" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".vagrant.d/" ".Trash/" ".tmux.conf" ".test.clj.un~" ".swt/" ".swp" ".swo" ".subversion/" ".ssh/" ".smex-items" ".scala_history" ".rvm/" ".rstudio-desktop/" ".rnd" ".Rhistory" ".RData" ".RapidMiner5/" ".puppet/" ".profile" ".pip/" ".overtone/" ".oh-my-zsh/" ".octave_hist" ".npm/" ".node-gyp/" ".netrc" ".NERDTreeBookmarks" ".msmtp.log" ".mplayer/" ".meteorite/" ".meteor/" ".matplotlib/" ".mailrc" ".m2/" ".local/" ".live-packs/" ".lesshst" ".lein/" ".kojo/" ".keys.pp.un~" ".keys.map.un~" ".jline-jython.history" ".irb-history" ".ipython/" ".ido.last~" ".ido.last" ".iclojure_history" ".iclojure.log" ".hy-history" ".hiera.pp.un~" ".heroku/" ".gvimrc" ".gnupg/" ".gitignore_global" ".gitconfig" ".ghc/" ".gem/" ".exercism.go" ".erlang.cookie" ".emacs.d/" ".emacs-live.el" ".DS_Store" ".dropbox-master/" ".dropbox/" ".curlrc" ".continuum/" ".config/" ".coffee_history" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bashrc" ".bash_profile" ".bash_history" ".atom/" ".ansible/" ".android/" "..vimrc.un~" "..gvimrc.un~" "#demo.org#" "../" "./")
+
+ ("/Users/justin/.emacs.d/lib/powerline/" (21386 15530 0 0) "README.md" "powerline.el" "powerline-themes.el" "powerline-separators.el" "evil.png" "evil-center.png" ".gitignore" ".git" ".#powerline.el" "#powerline.el#" "../" "./")
+
+ ("/Users/justin/.live-packs/justin-pack/" (21386 8239 0 0) "README.md" "lib/" "init.el" "info.el" "config/" ".init.el.un~" ".init.el.swp" ".DS_Store" "../" "./")
+
+ ("/Users/justin/.live-packs/justin-pack/config/" (21386 9768 0 0) "visual-config.el" "tweak-hooks.el" "paredit-config.el" "package-management.el" "multi-term.el" "monokai-theme.el" "molokai-theme.el" "molokai-theme-kit.el" "evil-config.el" "erc-nick-colors.el" "erc-general.el" "erc-buffer-nav.el" "elscreen-config.el" "custom-keys.el" "bindings.el" ".visual-config.el.swp" ".tweak-hooks.el.swp" ".package-management.el.un~" ".package-management.el.swp" ".gitkeep" ".custom-keys.el.swp" ".bindings.el.swp" "../" "./")
+
+ ("/Users/justin/dotfiles/emacs-live-packs/justin-pack/" (21386 8239 0 0) "README.md" "lib/" "init.el" "info.el" "config/" ".init.el.un~" ".init.el.swp" ".DS_Store" "../" "./")
+
+ ("/Users/justin/dotfiles/emacs-live-packs/justin-pack/config/" (21386 9768 0 0) "visual-config.el" "tweak-hooks.el" "paredit-config.el" "package-management.el" "multi-term.el" "monokai-theme.el" "molokai-theme.el" "molokai-theme-kit.el" "evil-config.el" "erc-nick-colors.el" "erc-general.el" "erc-buffer-nav.el" "elscreen-config.el" "custom-keys.el" "bindings.el" ".visual-config.el.swp" ".tweak-hooks.el.swp" ".package-management.el.un~" ".package-management.el.swp" ".gitkeep" ".custom-keys.el.swp" ".bindings.el.swp" "../" "./")
+
+ ("/Users/justin/src/gooey/" (21385 29006 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/rssfunnel/" (21385 31709 0 0) "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "doc/" "config.example.yaml" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/rssfunnel/src/rssfunnel/" (21385 31320 0 0) "util.clj" "core.clj" "../" "./")
+
+ ("/Users/justin/src/rssfunnel/src/" (21321 61705 0 0) "rssfunnel/" "../" "./")
+
+ ("/Users/justin/src/kanren-island/" (21385 27358 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/gooey/src/gooey/" (21385 27353 0 0) "core.clj" "../" "./")
+
+ ("/Users/justin/src/gooey/src/" (21384 42762 0 0) "gooey/" "../" "./")
+
+ ("/Users/justin/src/" (21384 42762 0 0) "yaml/" "wikitools/" "wgr/" "weirdpython/" "webdevwithclojure/" "twit4j/" "trimet-tracker/" "trimet-cljs/" "trimet/" "translate/" "tic-jack-toe/" "text-tools/" "test java/" "tails/" "simple/" "showoff/" "seteam-vagrant-stack/" "session/" "scopely/" "scala-prox/" "scala/" "satools/" "saquake-python/" "saquake-node/" "saquake/" "saprox-clojure/" "Sams24HourJava/" "salocs/" "safire/" "rssfunnel/" "rrss/" "rincanter/" "resume/" "restysa/" "restify/" "redis-2.6.16/" "ranodeom/" "r.names/" "puppetdb/" "puppet-docs/" "puppet/" "project-euler/" "pradarstats/" "pradar/" "ppdownloader/" "pedestal-app-tutorial/" "parserss/" "parser/" "opencv-test/" "offline-4clojure/" "nsatools/" "Nrss/" "npradar/" "nodestagram/" "nodef/" "nodebeginner/" "node/" "new-wave/" "nand2tetris/" "mongo/" "meteor-test/" "luminus/" "lrg/" "logic-tutorial/" "learnyounode/" "kiji-bento-buri/" "kiji-ansible/" "kanren-island/" "jruby-test/" "java-json/" "java-class/" "jacksamples/" "instaparsetest/" "instagram/" "impress/" "hy-euler/" "hoplon.io/" "hoplon-test/" "holguinj-git/" "helloworld/" "hello-java/" "headfirst/" "haskell-euler/" "haskell/" "hack-clj/" "gooey/" "go/" "git/" "ghost-latest.zip" "ghost/" "getter/" "geohash/" "gen_cities/" "fumblemacs/" "fourclojure/" "facter/" "exercism/" "euler/" "elixir-getting-started/" "dominic/" "docsgitbook/" "docs-git-workflow/" "djpradar/" "djangoproject/" "createvpn/" "cpp/" "courseware-fundamentals/" "couchdbtest/" "core-logic/" "ClojureProgramming/" "clojure/" "clj-rss/" "clj-debug/" "classifier/" "cider/" "c-test/" "boot/" "avi/" "asyncitems/" "ansible-downloader-maker/" "alertscanner/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/kanren-island/src/kanren_island/" (21384 41294 0 0) "core.clj" "../" "./")
+
+ ("/Users/justin/src/hack-clj/" (21382 45094 0 0) "test.jack" "test/" "target/" "src/" "Square.xml" "resources/" "README.md" "project.clj" "notes.org" "LICENSE" "hack_clj.iml" "ExpressionlessTest/" "doc/" ".test.sh.un~" ".test.markdown.un~" ".test.jack.un~" ".StackPush.asm.un~" ".StackOr.vm.un~" ".StackOr.asm.un~" ".StackNot.vm.un~" ".StackNot.asm.un~" ".StackNeg.vm.un~" ".StackNeg.asm.un~" ".StackEq.asm.un~" ".StackEq.asm!.un~" ".StackAdd.vm.un~" ".README.md.un~" ".push10.vm.un~" ".project.clj.un~" ".pop.vm.un~" ".notes.org.un~" ".loops.asm.un~" ".lein-repl-history" ".lein-failures" ".labelbug.vm.un~" ".Increment.vm.un~" ".idea/" ".gitignore" ".git/" ".FibonacciElement.asm.un~" ".DS_Store" ".basic.asm.un~" "../" "./")
+
+ ("/Users/justin/src/trimet-cljs/" (21383 59079 0 0) "target/" "src/" "project.clj" "out/" "notes.org" "index.html" ".repl/" ".project.clj.un~" ".lein-repl-history" ".gitignore" ".git/" ".DS_Store" "..gitignore.un~" "../" "./")
+
+ ("/Users/justin/src/trimet-cljs/src/trimet_cljs/" (21383 59076 0 0) "core.cljs" "../" "./")
+
+ ("/Users/justin/src/kanren-island/src/" (21384 944 0 0) "kanren_island/" "../" "./")
+
+ ("/Users/justin/src/kiji-ansible/" (21070 12076 0 0) "license-agree.sh" "kiji.yaml" "java.yaml" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/Applications/" (21380 3848 0 0) "~mkrepo" "XCOM Enemy Unknown.app/" "xbmc" "uninstall_homebrew.sh" "subl" "Shadowrun Returns.app/" "scala-2.10.2/" "pprm" "ppls" "ppco" "pp" "Papers, Please.app/" "nota-bene/" "NC4 Applications.app/" "mvim" "lrg/" "kkco" "kk" "jfork" "jackc" "ipy" "incanter/" "iclojure-latest.jar" "Gone Home.app/" "FTL Faster Than Light.app/" "exercism" "ec2/" "docker/" "cb.app/" "Braid.app/" "Borderlands 2.app/" "Bastion.app/" ".xbmc.un~" ".jackc.un~" ".DS_Store" "../" "./")
+
+ ("/Users/justin/dotfiles/emacs-live-packs/" (21380 2507 0 0) "justin-pack/" ".gitmodules" ".git" ".DS_Store" "../" "./")
+
+ ("/usr/local/" (21377 19536 0 0) "var/" "texlive/" "SUPPORTERS.md" "share/" "sbin/" "README.md" "opt/" "man/" "MacGPG2/" "LICENSE.txt" "Library/" "libexec/" "lib/" "include/" "heroku/" "google_appengine" "foreman/" "etc/" "CONTRIBUTING.md" "CODEOFCONDUCT.md" "Cellar/" "bin/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/usr/local/bin/" (21379 38735 0 0) "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec" "xzcmp" "xzcat" "xz" "xxd" "wish8.6" "wish8.5" "wish" "wget" "wftopfa" "weechat-curses" "weechat" "vimtutor" "vimdiff" "vim" "view" "unxz" "unrar" "unlzma" "unix-lpr.sh" "typer" "tree" "to_erl" "tmux" "texdist" "teacup" "tclvfse" "tclsh8.6" "tclsh8.5" "tclsh" "tclselect" "swipl-rc" "swipl-ld" "swipl" "svnversion" "svnsync" "svnserve" "svnrdump" "svnmucc" "svnlook" "svndumpfilter" "svnadmin" "svn" "ssh-copy-id" "srptool" "slencheck" "sexp-conv" "sconsign" "scons-time" "scons" "rvim" "rview" "runant.py" "runant.pl" "run_erl" "reattach-to-user-namespace" "psktool" "ps2ps2" "ps2ps" "ps2pdfwr" "ps2pdf14" "ps2pdf13" "ps2pdf12" "ps2pdf" "ps2epsi" "ps2ascii" "printafm" "pphs" "pkg-config" "pkcs1-conv" "phantomjs" "pfbtopfa" "pf2afm" "pdf2ps" "pdf2dsc" "pcretest" "pcregrep" "pcre-config" "opencv_traincascade" "opencv_performance" "opencv_haartraining" "opencv_createsamples" "odbcinst" "odbc_config" "ocsptool" "npm" "nping" "node" "nmap-update" "nmap" "nettle-lfib-stream" "nettle-hash" "ndiff" "ncat" "mvnyjp" "mvnDebug" "mvn" "mrt" "mpicalc" "mocha" "mkrepo" "mix" "mimedb" "meteor" "mate" "lzmore" "lzmainfo" "lzmadec" "lzma" "lzless" "lzgrep" "lzfgrep" "lzegrep" "lzdiff" "lzcmp" "lzcat" "lprsetup.sh" "lighttpd-angel" "lighttpd" "libgcrypt-config" "lein" "ksba-config" "jtestrb" "jrubyc" "jruby.sh" "jruby.bash" "jruby" "jri" "jrdoc" "jrake" "jirb_swing" "jirb" "jgem" "jclone" "jast" "iusql" "isql" "ifnames" "iex" "i686-apple-darwin11-gfortran-4.2.1" "i686-apple-darwin11-gcc-4.2.1" "i686-apple-darwin11-g++-4.2.1" "i686-apple-darwin11-cpp-4.2.1" "hub" "hmac256" "gsnd" "gslp" "gslj" "gsdj500" "gsdj" "gsbj" "gs-X11" "gs-noX11" "gs" "grep-changelog" "gpg-error-config" "gpg-error" "gpg" "gnutls-serv" "gnutls-cli-debug" "gnutls-cli" "gnutls-certtool" "glibtoolize" "glibtool" "github" "gitbook" "git-upload-pack" "git-upload-archive" "git-shell" "git-receive-pack" "git-cvsserver" "git-credential-osxkeychain" "git" "gfortran-4.2" "gcov-4.2" "gcc-4.2" "g++-4.2" "font2c" "fishd" "fish_pager" "fish_indent" "fish" "exercism" "ex" "event_rpcgen.py" "etags" "escript" "erlc" "erl" "eps2eps" "epmd" "emacsclient" "emacs-24.3" "emacs" "elixirc" "elixir" "ebrowse" "dvipdf" "dumpsexp" "dltest" "dialyzer" "danetool" "ctest" "ctags" "ct_run" "cpp-4.2" "cpack" "convert" "complete-ant-cmd.pl" "coffee" "cmakexbuild" "cmake" "ccmake" "cbmbasic" "cake" "c++-4.2" "brew" "avi" "autoupdate" "autoscan" "autoreconf" "automake-1.14" "automake" "autom4te" "autoheader" "autoconf" "atom" "asn1Parser" "asn1Decoding" "asn1Coding" "apm" "antRun.pl" "antRun" "ant" "ag" "addrepo" "aclocal-1.14" "aclocal" "ack" "_mocha" "../" "./")
+
+ ("/Users/justin/bin/" (21364 55748 0 0) "show_icons" "rmrepo" "hide_icons" "boot" ".rmrepo.un~" "../" "./")
+
+ ("/Users/justin/src/hack-clj/src/hack_clj/" (21379 36293 0 0) "vm_lookup.clj" "vm.clj" "util.clj" "regex.clj" "jack_lexer.clj" "jack_analyzer.clj" "jack.clj" "core.clj" "asm_lookup.clj" "asm.clj" ".vm_lookup.clj.un~" ".vm.clj.un~" ".util.clj.un~" ".regex.clj.un~" ".jack_lexer.clj.un~" ".jack_analyzer.clj.un~" ".jack.clj.un~" ".file.clj.un~" ".core.clj.un~" ".asm_lookup.clj.un~" ".asm.clj.un~" "../" "./")
+
+ ("/Users/justin/src/trimet-tracker/src/" (21379 35257 0 0) "trimet.cljs" "index.cljs.hl" ".trimet.cljs.un~" ".index.cljs.hl.un~" "../" "./")
+
+ ("/Users/justin/Dropbox/" (21378 48365 0 0) "YNAB/" "writethedocs2014.org" "Work/" "untitled folder/" "Thawte Roots/" "test.rss" "Taste-Test-Puppet-Chef-Salt-Ansible-v1/" "sync/" "src/" "Reading/" "Public/" "printpass.pdf" "Preferences/" "places/" "Photos/" "Personal/" "nand2tetris/" "n.scriv/" "milenio.rss" "lemonde.rss" "Journal.dayone/" "instagram_json.zip" "Icon
+" "FV.png" "Flashcards Deluxe/" "feedfunnel-0.1.0.jar" "euler 15.clj" "downloader.pp" "Apps/" "Active Projects/" "1Password.agilekeychain/" ".ynabSettings.yroot" ".ws.agile.1Password.settings" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/justin/src/clj-rss/src/clj_rss/" (21377 29271 0 0) "core.clj" ".core.clj.un~" "../" "./")
+
+ ("/Users/justin/src/clj-rss/test/clj_rss/" (21377 29271 0 0) "core_test.clj" ".core_test.clj.un~" "../" "./")
+
+ ("/Users/justin/src/clj-rss/" (21378 15633 0 0) "test/" "target/" "src/" "README.md" "project.clj" "pom.xml" ".travis.yml" ".project.clj.un~" ".lein-repl-history" ".lein-failures" ".gitignore" ".git/" ".DS_Store" "..gitignore.un~" "../" "./")
+
+ ("/Users/justin/src/clj-rss/test/" (21339 18701 0 0) "clj_rss/" "../" "./")
+
+ ("/Users/justin/.live-packs/" (21377 21892 0 0) "justin-pack/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/.emacs.d/elpa/goto-last-change-1.2/" (21377 20985 0 0) "goto-last-change.elc" "goto-last-change.el" "goto-last-change-pkg.el" "goto-last-change-autoloads.el" "../" "./")
+
+ ("/Users/justin/.emacs.d/elpa/" (21370 48800 0 0) "undo-tree-0.6.5/" "pkg-info-20140405.50/" "hy-mode-20140201.2055/" "helm-20140425.651/" "goto-last-change-1.2/" "expand-region-20140406.324/" "epl-20140405.51/" "dash-20140407.253/" "clojure-mode-20140423.636/" "clojure-cheatsheet-20140316.1520/" "cider-20140427.1320/" "change-inner-20130208.1130/" "archives/" "../" "./")
+
+ ("/Users/justin/src/nand2tetris/projects/10/ExpressionlessTest/" (21008 31204 0 0) "SquareT.xml" "SquareGameT.xml" "SquareGame.xml" "SquareGame.jack" "Square.xml" "Square.jack" "MainT.xml" "Main.xml" "Main.jack" "../" "./")
+
+ ("/Users/justin/src/nand2tetris/projects/10/ArrayTest/" (21008 31204 0 0) "MainT.xml" "Main.xml" "Main.jack" "../" "./")
+
+ ("/Users/justin/src/nand2tetris/projects/10/Square/" (21377 2640 0 0) "SquareT.xml" "SquareGameT.xml" "SquareGame.xml" "SquareGame.jack" "Square.xml" "Square.jack" "MainT.xml" "Main.xml" "Main.jack" "../" "./")
+
+ ("/Users/justin/src/nand2tetris/projects/10/" (21303 20755 0 0) "Square/" "ExpressionlessTest/" "ExpressionlessSquare/" "ArrayTest/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/nand2tetris/projects/" (21221 36925 0 0) "13/" "12/" "11/" "10/" "09/" "08/" "07/" "06/" "05/" "04/" "03/" "02/" "01/" "00/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/nand2tetris/" (21222 33951 0 0) "tools/" "projects/" ".gitignore" ".git/" ".DS_Store" "..gitignore.un~" "../" "./")
+
+ ("/Users/justin/src/clj-rss/src/" (21339 18701 0 0) "clj_rss/" "../" "./")
+
+ ("/Users/justin/src/impress/" (21356 4195 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "js/" "index.html" "doc/" "css/" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/impress/src/impress/" (21356 4187 0 0) "core.clj" "../" "./")
+
+ ("/Users/justin/src/exercism/clojure/word-count/" (21356 4187 0 0) "word-count_test.clj" "word-count.clj" "README.md" ".word-count.clj.un~" "../" "./")
+
+ ("/Users/justin/src/exercism/clojure/grade-school/" (21356 4187 0 0) "school.clj" "README.md" "grade_school_test.clj" ".school.clj.un~" "../" "./")
+
+ ("/Users/justin/src/exercism/clojure/robot-name/" (21357 23046 0 0) "robot_name_test.clj" "robot.clj" "README.md" "../" "./")
+
+ ("/Users/justin/src/exercism/clojure/leap/" (21358 45671 0 0) "README.md" "leap_test.clj" "leap.clj" "../" "./")
+
+ ("/Users/justin/src/trimet-tracker/" (21360 3741 0 0) "src/" "resources/" "README.md" "build.boot" "assets/" ".gitignore" ".git/" ".DS_Store" ".build.boot.un~" ".boot/" "../" "./")
+
+ ("/Users/justin/src/new-wave/" (21365 32567 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/new-wave/src/new_wave/" (21365 32568 0 0) "core.clj" "../" "./")
+
+ ("/Users/justin/src/offline-4clojure/src/offline_4clojure/" (21365 43277 0 0) "p99.clj" "p98.clj" "p97.clj" "p96.clj" "p95.clj" "p94.clj" "p93.clj" "p92.clj" "p91.clj" "p90.clj" "p9.clj" "p89.clj" "p88.clj" "p86.clj" "p85.clj" "p84.clj" "p83.clj" "p82.clj" "p81.clj" "p80.clj" "p8.clj" "p79.clj" "p78.clj" "p77.clj" "p76.clj" "p75.clj" "p74.clj" "p73.clj" "p72.clj" "p71.clj" "p70.clj" "p7.clj" "p69.clj" "p68.clj" "p67.clj" "p66.clj" "p65.clj" "p64.clj" "p63.clj" "p62.clj" "p61.clj" "p60.clj" "p6.clj" "p59.clj" "p58.clj" "p57.clj" "p56.clj" "p55.clj" "p54.clj" "p53.clj" "p52.clj" "p51.clj" "p50.clj" "p5.clj" "p49.clj" "p48.clj" "p47.clj" "p46.clj" "p45.clj" "p44.clj" "p43.clj" "p42.clj" "p41.clj" "p40.clj" "p4.clj" "p39.clj" "p38.clj" "p37.clj" "p36.clj" "p35.clj" "p34.clj" "p33.clj" "p32.clj" "p31.clj" "p30.clj" "p3.clj" "p29.clj" "p28.clj" "p27.clj" "p26.clj" "p25.clj" "p24.clj" "p23.clj" "p22.clj" "p21.clj" "p20.clj" "p2.clj" "p19.clj" "p18.clj" "p178.clj" "p177.clj" "p173.clj" "p171.clj" "p17.clj" "p168.clj" "p166.clj" "p164.clj" "p162.clj" "p161.clj" "p16.clj" "p158.clj" "p157.clj" "p156.clj" "p153.clj" "p152.clj" "p150.clj" "p15.clj" "p148.clj" "p147.clj" "p146.clj" "p145.clj" "p144.clj" "p143.clj" "p141.clj" "p140.clj" "p14.clj" "p138.clj" "p137.clj" "p135.clj" "p134.clj" "p132.clj" "p131.clj" "p130.clj" "p13.clj" "p128.clj" "p127.clj" "p126.clj" "p125.clj" "p124.clj" "p122.clj" "p121.clj" "p120.clj" "p12.clj" "p119.clj" "p118.clj" "p117.clj" "p116.clj" "p115.clj" "p114.clj" "p113.clj" "p112.clj" "p111.clj" "p110.clj" "p11.clj" "p108.clj" "p107.clj" "p106.clj" "p105.clj" "p104.clj" "p103.clj" "p102.clj" "p101.clj" "p100.clj" "p10.clj" "p1.clj" "core.clj" "../" "./")
+
+ ("/Users/justin/src/hy-euler/" (21372 14472 0 0) "one.pyc" "one.hy" "../" "./")
+
+ ("/Users/justin/src/hack-clj/src/" (21227 52105 0 0) "hack_clj/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/dotfiles/" (21370 48603 0 0) "weechat/" "vim/" "tmuxinator/" "tmux/" "oh-my-zsh/" "iterm2/" "git/" "emacs-live-packs/" "bootstrap" ".gitmodules" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/new-wave/src/" (21364 8059 0 0) "new_wave/" "../" "./")
+
+ ("/Users/justin/src/offline-4clojure/src/" (21360 2534 0 0) "offline_4clojure/" "../" "./")
+
+ ("/Users/justin/src/offline-4clojure/" (21360 19857 0 0) "test/" "src/" "README.md" "project.clj" "doc/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/trimet-cljs/src/" (21356 22030 0 0) "trimet_cljs/" "../" "./")
+
+ ("/Users/justin/src/exercism/clojure/meetup/" (21358 42810 0 0) "README.md" "meetup_test.clj" "meetup.clj" "../" "./")
+
+ ("/Users/justin/src/exercism/clojure/" (21358 29116 0 0) "word-count/" "robot-name/" "rna-transcription/" "point-mutations/" "phone-number/" "nucleotide-count/" "meetup/" "leap/" "grade-school/" "etl/" "bob/" "beer-song/" "anagram/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/exercism/clojure/etl/" (21358 29061 0 0) "README.md" "etl_test.clj" "etl.clj" "../" "./")
+
+ ("/Users/justin/src/fumblemacs/" (21352 26066 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/fumblemacs/src/fumblemacs/" (21352 26064 0 0) "core.clj" "../" "./")
+
+ ("/Users/justin/src/exercism/clojure/rna-transcription/" (21104 36225 0 0) "rna-transcription_test.clj" "README.md" "dna.clj" "../" "./")
+
+ ("/Users/justin/src/exercism/" (21356 185 0 0) "scala/" "ruby/" "python/" "perl5/" "ocaml/" "objective-c/" "javascript/" "haskell/" "go/" "elixir/" "csharp/" "coffeescript/" "clojure/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/impress/src/" (21352 28259 0 0) "impress/" "../" "./")
+
+ ("/Users/justin/src/fumblemacs/src/" (21341 42675 0 0) "fumblemacs/" "../" "./")
+
+ ("/Users/" (21098 62926 0 0) "Shared/" "justin/" "Guest/" ".localized" "../" "./")
+
+ ("/usr/" (21102 33636 0 0) "X11R6/" "X11/" "texbin/" "standalone/" "share/" "sbin/" "local/" "libexec/" "lib/" "include/" "bin/" "../" "./")
+
+ ("/usr/local/Cellar/" (21339 18147 0 0) "xz/" "wget/" "weechat/" "vim/" "unrar/" "unixodbc/" "tree/" "tmux/" "the_silver_searcher/" "swi-prolog/" "subversion/" "ssh-copy-id/" "sqlite/" "serf/" "scons/" "reattach-to-user-namespace/" "readline/" "rabbitmq/" "pkg-config/" "pcre/" "openssl/" "nmap/" "nettle/" "maven/" "lighttpd/" "libyaml/" "libtool/" "libtasn1/" "libksba/" "libgpg-error/" "libgcrypt/" "libevent/" "leiningen/" "jruby/" "hub/" "gnutls/" "gmp/" "fish/" "erlang/" "emacs/" "elixir/" "ctags/" "cmake/" "cbmbasic/" "automake/" "autoconf/" "apple-gcc42/" "ant/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/" (21154 45629 0 0) "24.3/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/24.3/" (21154 45760 0 0) "var/" "share/" "README" "libexec/" "INSTALL_RECEIPT.json" "Emacs.app/" "COPYING" "ChangeLog" "bin/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/24.3/share/" (21154 45718 0 0) "man/" "info/" "icons/" "emacs/" "applications/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/24.3/share/emacs/" (21154 45738 0 0) "site-lisp/" "24.3/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/24.3/share/emacs/24.3/" (21154 45738 0 0) "site-lisp/" "lisp/" "leim/" "etc/" "../" "./")
+
+ ("/usr/local/Cellar/emacs/24.3/share/emacs/24.3/etc/" (21154 45759 0 0) "yow.lines" "WHY-FREE" "tutorials/" "TODO" "themes/" "THE-GNU-PROJECT" "TERMS" "srecode/" "spook.lines" "sex.6" "ses-example.ses" "SERVICE" "schema/" "rgb.txt" "refcards/" "README" "publicsuffix.txt" "ps-prin1.ps" "ps-prin0.ps" "PROBLEMS" "ORG-NEWS" "org/" "ORDERS" "NXML-NEWS" "nxml/" "NEXTSTEP" "NEWS.23" "NEWS.22" "NEWS.21" "NEWS.20" "NEWS.19" "NEWS.18" "NEWS.1-17" "NEWS" "MOTIVATION" "MORE.STUFF" "MH-E-NEWS" "MAILINGLISTS" "MACHINES" "LINUX-GNU" "JOKES" "INTERVIEW" "images/" "HELLO" "grep.txt" "gnus-tut.txt" "GNUS-NEWS" "gnus/" "GNU" "future-bug" "FTP" "forms/" "ETAGS.README" "ETAGS.EBNF" "ERC-NEWS" "enriched.doc" "emacs.icon" "emacs.desktop" "emacs-buffer.gdb" "edt-user.el" "echo.msg" "e/" "DOC-24.3.1" "DISTRIB" "DEVEL.HUMOR" "DEBUG" "copying.paper" "COPYING" "COOKIES" "CONTRIBUTE" "condom.1" "compilation.txt" "charsets/" "CENSORSHIP" "celibacy.1" "AUTHORS" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

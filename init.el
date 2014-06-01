@@ -2,3 +2,4 @@
 (load "~/.emacs.d/config/key-bindings")
 (load "~/.emacs.d/config/ido-config")
 (load "~/.emacs.d/config/gui-settings")
+(load "~/.emacs.d/config/cider-config")

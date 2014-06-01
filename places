@@ -1,0 +1,13 @@
+;;; -*- coding: utf-8 -*-
+(("/Users/justin/.emacs.d/config/cider-config.el" . 91)
+ ("/Users/justin/.emacs.d/config/gui-settings.el" . 778)
+ ("/Users/justin/.emacs.d/config/ido-config.el" . 84)
+ ("/Users/justin/.emacs.d/config/package-management.el" . 1154)
+ ("/Users/justin/.emacs.d/elpa/clojurescript-mode-0.5/clojurescript-mode-autoloads.el" . 525)
+ ("/Users/justin/.emacs.d/elpa/paredit-20140128.1248/paredit-autoloads.el" . 840)
+ ("/Users/justin/.emacs.d/init.el" . 18)
+ ("/Users/justin/.emacs.d/lib/powerline/powerline.el" . 566)
+ ("/Users/justin/dotfiles/emacs-live-packs/justin-pack/config/paredit-config.el" . 67)
+ ("/Users/justin/src/clj-rss/src/clj_rss/core.clj" . 1038)
+ ("/Users/justin/src/rssfunnel/src/rssfunnel/core.clj" . 354)
+ ("/Users/justin/src/trimet-cljs/src/trimet_cljs/core.cljs" . 809))
