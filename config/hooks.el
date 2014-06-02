@@ -12,3 +12,5 @@
 (add-hook 'clojure-mode-hook          #'enable-paredit-mode)
 (add-hook 'clojurescript-mode-hook    #'enable-paredit-mode)
 (add-hook 'cider-repl-mode-hook       #'enable-paredit-mode)
+
+(add-hook 'markdown-mode-hook 'visual-line-mode)

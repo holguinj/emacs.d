@@ -1,5 +1,5 @@
 (defvar my-packages
-  '(ac-nrepl auto-complete clojurescript-mode clojure-mode clojure-test-mode cider better-defaults paredit eldoc smex cl ido-ubiquitous git-gutter-fringe magit anaphora change-inner erc-tweet expand-region hy-mode diminish flx-ido flycheck puppet-mode)
+  '(markdown-mode ac-nrepl auto-complete clojurescript-mode clojure-mode clojure-test-mode cider better-defaults paredit eldoc smex cl ido-ubiquitous git-gutter-fringe magit anaphora change-inner erc-tweet expand-region hy-mode diminish flx-ido flycheck puppet-mode)
   "A list of packages to ensure are installed at launch.")
 
 ;; M-h v package-activated-list RET
