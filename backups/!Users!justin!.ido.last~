@@ -13,12 +13,12 @@
  ("/Users/justin/.live-packs/justin-pack/" . "config/")
  ("/Users/justin/.live-packs/" . "justin-pack/")
  ("/Users/justin/.emacs.d/elpa/" . "goto-last-change-1.2/")
- ("/Users/justin/.emacs.d/" . "elpa/")
+ ("/Users/justin/.emacs.d/" . "config/")
  ("/Users/justin/src/nand2tetris/projects/10/" . "ExpressionlessTest/")
  ("/Users/justin/src/nand2tetris/projects/" . "10/")
  ("/Users/justin/src/nand2tetris/" . "projects/")
  ("/Users/justin/src/clj-rss/src/" . "clj_rss/")
- ("/Users/justin/src/clj-rss/" . "test/")
+ ("/Users/justin/src/clj-rss/" . "src/")
  ("/Users/justin/src/hack-clj/src/" . "hack_clj/")
  ("/Users/justin/src/hack-clj/" . "src/")
  ("/Users/justin/src/new-wave/src/" . "new_wave/")
@@ -34,7 +34,7 @@
  ("/Users/justin/src/impress/" . "src/")
  ("/Users/justin/src/fumblemacs/src/" . "fumblemacs/")
  ("/Users/justin/src/fumblemacs/" . "src/")
- ("/Users/justin/src/" . "rssfunnel/")
+ ("/Users/justin/src/" . "trimet-cljs/")
  ("/Users/justin/dotfiles/emacs-live-packs/" . "justin-pack/")
  ("/Users/justin/dotfiles/" . "emacs-live-packs/")
  ("/Users/justin/" . ".emacs.d/")
@@ -44,26 +44,28 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/justin/.emacs.d/"
  "/Users/justin/.emacs.d/config/"
+ "/Users/justin/src/trimet-cljs/src/trimet_cljs/"
+ "/Users/justin/.emacs.d/"
+ "/Users/justin/dotfiles/emacs-live-packs/justin-pack/config/"
+ "/Users/justin/Dropbox/"
+ "/Users/justin/.lein/"
+ "/Users/justin/src/clj-rss/src/clj_rss/"
  "/Users/justin/"
  "/Users/justin/src/rssfunnel/src/rssfunnel/"
  "/Users/justin/src/rssfunnel/"
  "/Users/justin/src/clj-rss/"
  "/Users/justin/src/gooey/src/gooey/"
  "/Users/justin/src/gooey/"
- "/Users/justin/dotfiles/emacs-live-packs/justin-pack/config/"
  "/Users/justin/src/kanren-island/src/kanren_island/"
  "/Users/justin/src/kanren-island/"
  "/Users/justin/src/trimet-tracker/src/"
- "/Users/justin/src/trimet-cljs/src/trimet_cljs/"
  "/Users/justin/src/trimet-cljs/"
  "/Users/justin/Applications/"
  "/Users/justin/dotfiles/emacs-live-packs/justin-pack/"
  "/Users/justin/.live-packs/justin-pack/config/"
  "/Users/justin/.live-packs/justin-pack/"
  "/Users/justin/src/clj-rss/test/clj_rss/"
- "/Users/justin/src/clj-rss/src/clj_rss/"
  "/Users/justin/.emacs.d/elpa/goto-last-change-1.2/"
  "/Users/justin/src/nand2tetris/projects/10/ExpressionlessTest/"
  "/Users/justin/src/nand2tetris/projects/10/ArrayTest/"
@@ -83,48 +85,67 @@
  "/Users/justin/src/exercism/clojure/word-count/"
  "/Users/justin/src/impress/src/impress/"
  "/Users/justin/src/impress/"
- "/Users/justin/Dropbox/"
  "/Users/justin/src/fumblemacs/src/fumblemacs/"
  "/Users/justin/src/fumblemacs/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "init.el"
- "gui-settings.el"
+ "hooks.el"
+ "cider-config.el"
  "package-management.el"
  ".package-management.el.swp"
- "demo.org"
- "util.clj"
- "core.clj"
- "project.clj"
+ "core.cljs"
+ "init.el"
  "paredit-config.el"
- "core.clj{core.clj^ | core.cljs | core_test.clj}"
+ ".ws.agile.1Password.settings"
+ "git-config.el"
+ "ido-config.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/justin/.emacs.d/" (21386 15718 0 0) "places" "lib/" "init.el~" "init.el" "elpa/" "config/" "backups/" "auto-save-list/" ".init.el.un~" ".init.el.swp" ".gitmodules" ".gitignore" ".git/" "..gitignore.un~" "../" "./")
+ ("/Users/justin/.emacs.d/config/" (21387 44080 0 0) "paredit-config.el" "package-management.el~" "package-management.el" "key-bindings.el" "ido-config.el" "hooks.el" "gui-settings.el" "git-config.el" "cider-config.el" ".package-management.el.un~" ".package-management.el.swp" ".key-bindings.el.un~" ".key-bindings.el.swp" ".ido-config.el.un~" ".ido-config.el.swp" ".gui-settings.el.un~" ".gui-settings.el.swp" "../" "./")
 
- ("/Users/justin/.emacs.d/config/" (21386 15717 0 0) "package-management.el~" "package-management.el" "key-bindings.el" "ido-config.el" "gui-settings.el" ".package-management.el.un~" ".package-management.el.swp" ".key-bindings.el.un~" ".key-bindings.el.swp" ".ido-config.el.un~" ".ido-config.el.swp" ".gui-settings.el.un~" ".gui-settings.el.swp" "../" "./")
+ ("/Users/justin/src/trimet-cljs/src/trimet_cljs/" (21387 43590 0 0) "core.cljs" ".#core.cljs" "#core.cljs#" "../" "./")
 
- ("/Users/justin/" (21386 15718 0 0) "yankring_history_v2.txt" "src/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "bin/" "Applications/" "anaconda/" ".zshrc.pre-oh-my-zsh" ".zshrc.bak" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zlogin" ".zcompdump-jAir-5.0.2" ".xbmc/" ".Xauthority" ".x.un~" ".weechat/" ".vimrc.bak" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".vagrant.d/" ".Trash/" ".tmux.conf" ".test.clj.un~" ".swt/" ".swp" ".swo" ".subversion/" ".ssh/" ".smex-items" ".scala_history" ".rvm/" ".rstudio-desktop/" ".rnd" ".Rhistory" ".RData" ".RapidMiner5/" ".puppet/" ".profile" ".pip/" ".overtone/" ".oh-my-zsh/" ".octave_hist" ".npm/" ".node-gyp/" ".netrc" ".NERDTreeBookmarks" ".msmtp.log" ".mplayer/" ".meteorite/" ".meteor/" ".matplotlib/" ".mailrc" ".m2/" ".local/" ".live-packs/" ".lesshst" ".lein/" ".kojo/" ".keys.pp.un~" ".keys.map.un~" ".jline-jython.history" ".irb-history" ".ipython/" ".ido.last~" ".ido.last" ".iclojure_history" ".iclojure.log" ".hy-history" ".hiera.pp.un~" ".heroku/" ".gvimrc" ".gnupg/" ".gitignore_global" ".gitconfig" ".ghc/" ".gem/" ".exercism.go" ".erlang.cookie" ".emacs.d/" ".emacs-live.el" ".DS_Store" ".dropbox-master/" ".dropbox/" ".curlrc" ".continuum/" ".config/" ".coffee_history" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bashrc" ".bash_profile" ".bash_history" ".atom/" ".ansible/" ".android/" "..vimrc.un~" "..gvimrc.un~" "#demo.org#" "../" "./")
+ ("/Users/justin/.emacs.d/" (21387 43284 0 0) "places" "lib/" "init.el~" "init.el" "elpa/" "config/" "backups/" "auto-save-list/" ".init.el.un~" ".init.el.swp" ".gitmodules" ".gitignore" ".git/" "..gitignore.un~" "../" "./")
+
+ ("/Users/justin/src/trimet-cljs/" (21387 43319 0 0) "target/" "src/" "project.clj" "out/" "notes.org" "index.html" ".repl/" ".project.clj.un~" ".nrepl-port" ".lein-repl-history" ".gitignore" ".git/" ".DS_Store" "..gitignore.un~" "../" "./")
+
+ ("/Users/justin/" (21387 43284 0 0) "yankring_history_v2.txt" "src/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "bin/" "Applications/" "anaconda/" ".zshrc.pre-oh-my-zsh" ".zshrc.bak" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zlogin" ".zcompdump-jAir-5.0.2" ".xbmc/" ".Xauthority" ".x.un~" ".weechat/" ".vimrc.bak" ".vimrc" ".viminfo" ".vimgolf/" ".vim/" ".vagrant.d/" ".Trash/" ".tmux.conf" ".test.clj.un~" ".swt/" ".swp" ".swo" ".subversion/" ".ssh/" ".smex-items" ".scala_history" ".rvm/" ".rstudio-desktop/" ".rnd" ".Rhistory" ".RData" ".RapidMiner5/" ".puppet/" ".profile" ".pip/" ".overtone/" ".oh-my-zsh/" ".octave_hist" ".npm/" ".node-gyp/" ".netrc" ".NERDTreeBookmarks" ".msmtp.log" ".mplayer/" ".meteorite/" ".meteor/" ".matplotlib/" ".mailrc" ".m2/" ".local/" ".live-packs/" ".lesshst" ".lein/" ".kojo/" ".keys.pp.un~" ".keys.map.un~" ".jline-jython.history" ".irb-history" ".ipython/" ".ido.last~" ".ido.last" ".iclojure_history" ".iclojure.log" ".hy-history" ".hiera.pp.un~" ".heroku/" ".gvimrc" ".gnupg/" ".gitignore_global" ".gitconfig" ".ghc/" ".gem/" ".exercism.go" ".erlang.cookie" ".emacs.d/" ".emacs-live.el" ".DS_Store" ".dropbox-master/" ".dropbox/" ".curlrc" ".continuum/" ".config/" ".coffee_history" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bashrc" ".bash_profile" ".bash_history" ".atom/" ".ansible/" ".android/" "..vimrc.un~" "..gvimrc.un~" "#demo.org#" "../" "./")
+
+ ("/Users/justin/dotfiles/emacs-live-packs/" (21383 21706 0 0) "justin-pack/" ".gitmodules" ".git" ".DS_Store" "../" "./")
+
+ ("/Users/justin/Dropbox/1Password.agilekeychain/" (21387 30635 0 0) "sync/" "data/" "config/" "a/" "1Password.html" "../" "./")
+
+ ("/Users/justin/.live-packs/justin-pack/config/" (21387 42996 0 0) "visual-config.el" "tweak-hooks.el" "paredit-config.el" "package-management.el" "multi-term.el" "monokai-theme.el" "molokai-theme.el" "molokai-theme-kit.el" "evil-config.el" "erc-nick-colors.el" "erc-general.el" "erc-buffer-nav.el" "elscreen-config.el" "custom-keys.el" "bindings.el" ".visual-config.el.swp" ".tweak-hooks.el.swp" ".package-management.el.un~" ".package-management.el.swp" ".gitkeep" ".custom-keys.el.swp" ".bindings.el.swp" "../" "./")
+
+ ("/Users/justin/dotfiles/emacs-live-packs/justin-pack/config/" (21387 42996 0 0) "visual-config.el" "tweak-hooks.el" "paredit-config.el" "package-management.el" "multi-term.el" "monokai-theme.el" "molokai-theme.el" "molokai-theme-kit.el" "evil-config.el" "erc-nick-colors.el" "erc-general.el" "erc-buffer-nav.el" "elscreen-config.el" "custom-keys.el" "bindings.el" ".visual-config.el.swp" ".tweak-hooks.el.swp" ".package-management.el.un~" ".package-management.el.swp" ".gitkeep" ".custom-keys.el.swp" ".bindings.el.swp" "../" "./")
+
+ ("/Users/justin/src/clj-rss/" (21386 20748 0 0) "test/" "target/" "src/" "README.md" "project.clj" "pom.xml" ".travis.yml" ".project.clj.un~" ".lein-repl-history" ".lein-failures" ".gitignore" ".git/" ".DS_Store" "..gitignore.un~" "../" "./")
+
+ ("/Users/justin/src/rssfunnel/" (21386 49697 0 0) "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "doc/" "config.example.yaml" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/justin/src/rssfunnel/src/rssfunnel/" (21386 46490 0 0) "util.clj" "core.clj" "../" "./")
+
+ ("/Users/justin/src/clj-rss/src/clj_rss/" (21386 20748 0 0) "core.clj" ".core.clj.un~" "#core.clj#" "../" "./")
+
+ ("/Users/justin/.emacs.d/elpa/" (21386 46892 0 0) "smex-20140425.1314/" "s-20131223.944/" "puppet-mode-20140428.159/" "pkg-info-20140405.50/" "paredit-20140128.1248/" "magit-20140522.1128/" "ido-ubiquitous-20140526.1306/" "hy-mode-20140201.2055/" "git-rebase-mode-20140313.1504/" "git-gutter-fringe-20131117.635/" "git-gutter-20140418.1904/" "git-commit-mode-20140313.1504/" "fringe-helper-20130519.741/" "flycheck-20140527.1133/" "flx-ido-20140416.1727/" "flx-20140420.1131/" "f-20140220.21/" "expand-region-20140406.324/" "erc-tweet-20140225.1552/" "epl-20140405.51/" "diminish-20091203.1012/" "dash-20140528.511/" "clojurescript-mode-0.5/" "clojure-test-mode-20140530.514/" "clojure-mode-20140530.903/" "cider-20140530.419/" "change-inner-20130208.1130/" "better-defaults-20130422.1322/" "archives/" "anaphora-20140508.1341/" "../" "./")
+
+ ("/Users/justin/.emacs.d/elpa/clojurescript-mode-0.5/" (21386 46899 0 0) "clojurescript-mode.elc" "clojurescript-mode.el" "clojurescript-mode-pkg.elc" "clojurescript-mode-pkg.el" "clojurescript-mode-autoloads.el" "../" "./")
+
+ ("/Users/justin/.lein/" (21384 1981 0 0) "repl-history" "profiles.clj" ".profiles.clj.un~" "../" "./")
+
+ ("/Users/justin/src/" (21386 7860 0 0) "yaml/" "wikitools/" "wgr/" "weirdpython/" "webdevwithclojure/" "twit4j/" "trimet-tracker/" "trimet-cljs/" "trimet/" "translate/" "tic-jack-toe/" "text-tools/" "test java/" "tails/" "simple/" "showoff/" "seteam-vagrant-stack/" "session/" "scopely/" "scala-prox/" "scala/" "satools/" "saquake-python/" "saquake-node/" "saquake/" "saprox-clojure/" "Sams24HourJava/" "salocs/" "safire/" "rssfunnel/" "rrss/" "rincanter/" "resume/" "restysa/" "restify/" "redis-2.6.16/" "ranodeom/" "r.names/" "puppetdb/" "puppet-docs/" "puppet/" "project-euler/" "pradarstats/" "pradar/" "ppdownloader/" "pedestal-app-tutorial/" "parserss/" "parser/" "opencv-test/" "offline-4clojure/" "nsatools/" "Nrss/" "npradar/" "nodestagram/" "nodef/" "nodebeginner/" "node/" "new-wave/" "nand2tetris/" "mongo/" "meteor-test/" "luminus/" "lrg/" "logic-tutorial/" "learnyounode/" "kiji-bento-buri/" "kiji-ansible/" "kanren-island/" "jruby-test/" "java-json/" "java-class/" "jacksamples/" "instaparsetest/" "instagram/" "impress/" "hy-euler/" "hoplon.io/" "hoplon-test/" "holguinj-git/" "helloworld/" "hello-java/" "headfirst/" "haskell-euler/" "haskell/" "hack-clj/" "gooey/" "go/" "git/" "ghost-latest.zip" "ghost/" "getter/" "geohash/" "gen_cities/" "fumblemacs/" "fourclojure/" "feedfunnel/" "facter/" "exercism/" "euler/" "emacs-live.d/" "elixir-getting-started/" "dominic/" "docsgitbook/" "docs-git-workflow/" "djpradar/" "djangoproject/" "createvpn/" "cpp/" "courseware-fundamentals/" "couchdbtest/" "core-logic/" "ClojureProgramming/" "clojure/" "clj-rss/" "clj-debug/" "classifier/" "cider/" "c-test/" "boot/" "avi/" "asyncitems/" "ansible-downloader-maker/" "alertscanner/" ".DS_Store" "../" "./")
 
  ("/Users/justin/.emacs.d/lib/powerline/" (21386 15530 0 0) "README.md" "powerline.el" "powerline-themes.el" "powerline-separators.el" "evil.png" "evil-center.png" ".gitignore" ".git" ".#powerline.el" "#powerline.el#" "../" "./")
 
  ("/Users/justin/.live-packs/justin-pack/" (21386 8239 0 0) "README.md" "lib/" "init.el" "info.el" "config/" ".init.el.un~" ".init.el.swp" ".DS_Store" "../" "./")
 
- ("/Users/justin/.live-packs/justin-pack/config/" (21386 9768 0 0) "visual-config.el" "tweak-hooks.el" "paredit-config.el" "package-management.el" "multi-term.el" "monokai-theme.el" "molokai-theme.el" "molokai-theme-kit.el" "evil-config.el" "erc-nick-colors.el" "erc-general.el" "erc-buffer-nav.el" "elscreen-config.el" "custom-keys.el" "bindings.el" ".visual-config.el.swp" ".tweak-hooks.el.swp" ".package-management.el.un~" ".package-management.el.swp" ".gitkeep" ".custom-keys.el.swp" ".bindings.el.swp" "../" "./")
-
  ("/Users/justin/dotfiles/emacs-live-packs/justin-pack/" (21386 8239 0 0) "README.md" "lib/" "init.el" "info.el" "config/" ".init.el.un~" ".init.el.swp" ".DS_Store" "../" "./")
 
- ("/Users/justin/dotfiles/emacs-live-packs/justin-pack/config/" (21386 9768 0 0) "visual-config.el" "tweak-hooks.el" "paredit-config.el" "package-management.el" "multi-term.el" "monokai-theme.el" "molokai-theme.el" "molokai-theme-kit.el" "evil-config.el" "erc-nick-colors.el" "erc-general.el" "erc-buffer-nav.el" "elscreen-config.el" "custom-keys.el" "bindings.el" ".visual-config.el.swp" ".tweak-hooks.el.swp" ".package-management.el.un~" ".package-management.el.swp" ".gitkeep" ".custom-keys.el.swp" ".bindings.el.swp" "../" "./")
-
  ("/Users/justin/src/gooey/" (21385 29006 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".gitignore" ".DS_Store" "../" "./")
-
- ("/Users/justin/src/rssfunnel/" (21385 31709 0 0) "test/" "target/" "src/" "README.md" "project.clj" "LICENSE" "doc/" "config.example.yaml" ".gitignore" ".git/" ".DS_Store" "../" "./")
-
- ("/Users/justin/src/rssfunnel/src/rssfunnel/" (21385 31320 0 0) "util.clj" "core.clj" "../" "./")
 
  ("/Users/justin/src/rssfunnel/src/" (21321 61705 0 0) "rssfunnel/" "../" "./")
 
@@ -134,23 +155,15 @@
 
  ("/Users/justin/src/gooey/src/" (21384 42762 0 0) "gooey/" "../" "./")
 
- ("/Users/justin/src/" (21384 42762 0 0) "yaml/" "wikitools/" "wgr/" "weirdpython/" "webdevwithclojure/" "twit4j/" "trimet-tracker/" "trimet-cljs/" "trimet/" "translate/" "tic-jack-toe/" "text-tools/" "test java/" "tails/" "simple/" "showoff/" "seteam-vagrant-stack/" "session/" "scopely/" "scala-prox/" "scala/" "satools/" "saquake-python/" "saquake-node/" "saquake/" "saprox-clojure/" "Sams24HourJava/" "salocs/" "safire/" "rssfunnel/" "rrss/" "rincanter/" "resume/" "restysa/" "restify/" "redis-2.6.16/" "ranodeom/" "r.names/" "puppetdb/" "puppet-docs/" "puppet/" "project-euler/" "pradarstats/" "pradar/" "ppdownloader/" "pedestal-app-tutorial/" "parserss/" "parser/" "opencv-test/" "offline-4clojure/" "nsatools/" "Nrss/" "npradar/" "nodestagram/" "nodef/" "nodebeginner/" "node/" "new-wave/" "nand2tetris/" "mongo/" "meteor-test/" "luminus/" "lrg/" "logic-tutorial/" "learnyounode/" "kiji-bento-buri/" "kiji-ansible/" "kanren-island/" "jruby-test/" "java-json/" "java-class/" "jacksamples/" "instaparsetest/" "instagram/" "impress/" "hy-euler/" "hoplon.io/" "hoplon-test/" "holguinj-git/" "helloworld/" "hello-java/" "headfirst/" "haskell-euler/" "haskell/" "hack-clj/" "gooey/" "go/" "git/" "ghost-latest.zip" "ghost/" "getter/" "geohash/" "gen_cities/" "fumblemacs/" "fourclojure/" "facter/" "exercism/" "euler/" "elixir-getting-started/" "dominic/" "docsgitbook/" "docs-git-workflow/" "djpradar/" "djangoproject/" "createvpn/" "cpp/" "courseware-fundamentals/" "couchdbtest/" "core-logic/" "ClojureProgramming/" "clojure/" "clj-rss/" "clj-debug/" "classifier/" "cider/" "c-test/" "boot/" "avi/" "asyncitems/" "ansible-downloader-maker/" "alertscanner/" ".DS_Store" "../" "./")
-
  ("/Users/justin/src/kanren-island/src/kanren_island/" (21384 41294 0 0) "core.clj" "../" "./")
 
  ("/Users/justin/src/hack-clj/" (21382 45094 0 0) "test.jack" "test/" "target/" "src/" "Square.xml" "resources/" "README.md" "project.clj" "notes.org" "LICENSE" "hack_clj.iml" "ExpressionlessTest/" "doc/" ".test.sh.un~" ".test.markdown.un~" ".test.jack.un~" ".StackPush.asm.un~" ".StackOr.vm.un~" ".StackOr.asm.un~" ".StackNot.vm.un~" ".StackNot.asm.un~" ".StackNeg.vm.un~" ".StackNeg.asm.un~" ".StackEq.asm.un~" ".StackEq.asm!.un~" ".StackAdd.vm.un~" ".README.md.un~" ".push10.vm.un~" ".project.clj.un~" ".pop.vm.un~" ".notes.org.un~" ".loops.asm.un~" ".lein-repl-history" ".lein-failures" ".labelbug.vm.un~" ".Increment.vm.un~" ".idea/" ".gitignore" ".git/" ".FibonacciElement.asm.un~" ".DS_Store" ".basic.asm.un~" "../" "./")
-
- ("/Users/justin/src/trimet-cljs/" (21383 59079 0 0) "target/" "src/" "project.clj" "out/" "notes.org" "index.html" ".repl/" ".project.clj.un~" ".lein-repl-history" ".gitignore" ".git/" ".DS_Store" "..gitignore.un~" "../" "./")
-
- ("/Users/justin/src/trimet-cljs/src/trimet_cljs/" (21383 59076 0 0) "core.cljs" "../" "./")
 
  ("/Users/justin/src/kanren-island/src/" (21384 944 0 0) "kanren_island/" "../" "./")
 
  ("/Users/justin/src/kiji-ansible/" (21070 12076 0 0) "license-agree.sh" "kiji.yaml" "java.yaml" ".svn/" ".DS_Store" "../" "./")
 
  ("/Users/justin/Applications/" (21380 3848 0 0) "~mkrepo" "XCOM Enemy Unknown.app/" "xbmc" "uninstall_homebrew.sh" "subl" "Shadowrun Returns.app/" "scala-2.10.2/" "pprm" "ppls" "ppco" "pp" "Papers, Please.app/" "nota-bene/" "NC4 Applications.app/" "mvim" "lrg/" "kkco" "kk" "jfork" "jackc" "ipy" "incanter/" "iclojure-latest.jar" "Gone Home.app/" "FTL Faster Than Light.app/" "exercism" "ec2/" "docker/" "cb.app/" "Braid.app/" "Borderlands 2.app/" "Bastion.app/" ".xbmc.un~" ".jackc.un~" ".DS_Store" "../" "./")
-
- ("/Users/justin/dotfiles/emacs-live-packs/" (21380 2507 0 0) "justin-pack/" ".gitmodules" ".git" ".DS_Store" "../" "./")
 
  ("/usr/local/" (21377 19536 0 0) "var/" "texlive/" "SUPPORTERS.md" "share/" "sbin/" "README.md" "opt/" "man/" "MacGPG2/" "LICENSE.txt" "Library/" "libexec/" "lib/" "include/" "heroku/" "google_appengine" "foreman/" "etc/" "CONTRIBUTING.md" "CODEOFCONDUCT.md" "Cellar/" "bin/" ".gitignore" ".git/" ".DS_Store" "../" "./")
 
@@ -165,19 +178,13 @@
  ("/Users/justin/Dropbox/" (21378 48365 0 0) "YNAB/" "writethedocs2014.org" "Work/" "untitled folder/" "Thawte Roots/" "test.rss" "Taste-Test-Puppet-Chef-Salt-Ansible-v1/" "sync/" "src/" "Reading/" "Public/" "printpass.pdf" "Preferences/" "places/" "Photos/" "Personal/" "nand2tetris/" "n.scriv/" "milenio.rss" "lemonde.rss" "Journal.dayone/" "instagram_json.zip" "Icon
 " "FV.png" "Flashcards Deluxe/" "feedfunnel-0.1.0.jar" "euler 15.clj" "downloader.pp" "Apps/" "Active Projects/" "1Password.agilekeychain/" ".ynabSettings.yroot" ".ws.agile.1Password.settings" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
 
- ("/Users/justin/src/clj-rss/src/clj_rss/" (21377 29271 0 0) "core.clj" ".core.clj.un~" "../" "./")
-
  ("/Users/justin/src/clj-rss/test/clj_rss/" (21377 29271 0 0) "core_test.clj" ".core_test.clj.un~" "../" "./")
-
- ("/Users/justin/src/clj-rss/" (21378 15633 0 0) "test/" "target/" "src/" "README.md" "project.clj" "pom.xml" ".travis.yml" ".project.clj.un~" ".lein-repl-history" ".lein-failures" ".gitignore" ".git/" ".DS_Store" "..gitignore.un~" "../" "./")
 
  ("/Users/justin/src/clj-rss/test/" (21339 18701 0 0) "clj_rss/" "../" "./")
 
  ("/Users/justin/.live-packs/" (21377 21892 0 0) "justin-pack/" ".DS_Store" "../" "./")
 
  ("/Users/justin/.emacs.d/elpa/goto-last-change-1.2/" (21377 20985 0 0) "goto-last-change.elc" "goto-last-change.el" "goto-last-change-pkg.el" "goto-last-change-autoloads.el" "../" "./")
-
- ("/Users/justin/.emacs.d/elpa/" (21370 48800 0 0) "undo-tree-0.6.5/" "pkg-info-20140405.50/" "hy-mode-20140201.2055/" "helm-20140425.651/" "goto-last-change-1.2/" "expand-region-20140406.324/" "epl-20140405.51/" "dash-20140407.253/" "clojure-mode-20140423.636/" "clojure-cheatsheet-20140316.1520/" "cider-20140427.1320/" "change-inner-20130208.1130/" "archives/" "../" "./")
 
  ("/Users/justin/src/nand2tetris/projects/10/ExpressionlessTest/" (21008 31204 0 0) "SquareT.xml" "SquareGameT.xml" "SquareGame.xml" "SquareGame.jack" "Square.xml" "Square.jack" "MainT.xml" "Main.xml" "Main.jack" "../" "./")
 

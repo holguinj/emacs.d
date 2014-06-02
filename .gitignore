@@ -3,3 +3,5 @@
 .*.swo
 .*.un~
 *.elc
+*.ido.last~
+backups/
