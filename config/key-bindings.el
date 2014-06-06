@@ -1,3 +1,6 @@
+;; RMS is wrong about sentences.
+(setq sentence-end-double-space nil)
+
 ;; command-` should cycle frames as per the rest of OS X
 (global-set-key (kbd "M-`") 'other-frame)
 
