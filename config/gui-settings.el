@@ -18,6 +18,10 @@
 (set-frame-parameter (selected-frame) 'alpha '(98 85))
 (add-to-list 'default-frame-alist '(alpha 90 85))
 
+;; replace selection when yanking
+(delete-selection-mode)
+
+
 ;; Move focus to new split (duh)
 (defadvice split-window (after move-point-to-new-window activate)
   "Moves the point to the newly created window after splitting."
