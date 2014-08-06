@@ -1,5 +1,5 @@
 (defvar my-packages
-  '(linum-relative rainbow-delimiters cl-lib evil evil-leader evil-numbers evil-surround cm-mode markdown-mode ac-nrepl auto-complete clojurescript-mode clojure-mode cider better-defaults paredit eldoc smex cl ido-ubiquitous git-gutter-fringe magit anaphora change-inner erc-tweet expand-region hy-mode diminish flx-ido flycheck puppet-mode slamhound)
+  '(linum-relative rainbow-delimiters cl-lib evil evil-leader evil-numbers evil-surround cm-mode markdown-mode ac-nrepl auto-complete clojurescript-mode clojure-mode cider better-defaults paredit eldoc smex cl ido-ubiquitous git-gutter-fringe magit anaphora change-inner erc-tweet expand-region hy-mode diminish flx-ido flycheck puppet-mode slamhound auctex auctex-latexmk latex extra latex-pretty-symbols latex-preview-pane)
   "A list of packages to ensure are installed at launch.")
 
 ;; M-h v package-activated-list RET
@@ -26,7 +26,7 @@
     (package-install p)))
 
 ;; Not strictly package management, but hey:
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin:/usr/texbin"))
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
 
