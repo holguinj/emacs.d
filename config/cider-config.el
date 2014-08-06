@@ -8,9 +8,10 @@
 (eval-after-load "auto-complete"
   '(add-to-list 'ac-modes 'cider-repl-mode))
 
-;; Trigger AC with TAB
+;; Trigger AC with TAB does this break things
 (defun set-auto-complete-as-completion-at-point-function ()
   (setq completion-at-point-functions '(auto-complete)))
+
 (add-hook 'auto-complete-mode-hook 'set-auto-complete-as-completion-at-point-function)
 
 (add-hook 'cider-repl-mode-hook 'set-auto-complete-as-completion-at-point-function)

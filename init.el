@@ -6,6 +6,7 @@
 (load "~/.emacs.d/config/hooks")
 (load "~/.emacs.d/config/latex-config")
 (load "~/.emacs.d/config/evil-config")
+(load "~/.emacs.d/config/gui-settings")
 (server-start)
 
 (custom-set-variables
@@ -20,5 +21,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:background "#1b1d1e" :foreground "#f8f8f0")))))
-
-(load-file "~/.emacs.d/config/gui-settings.el")

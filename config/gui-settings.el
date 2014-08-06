@@ -1,18 +1,18 @@
-(require 'linum-relative)
-(linum-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Molokai theme
+(load "~/.emacs.d/lib/molokai-theme/molokai-theme")
 
-;; Turn on Powerline
-;;(powerline-center-evil-theme)
-;;(powerline-reset)
+(linum-mode)
 
 ;; Disable toolbars
 (tool-bar-mode -1)
 
 ;; Git gutter fringe
-(global-git-gutter-mode +1)
+(global-git-gutter+-mode t)
+(require 'git-gutter-fringe+)
+
 (setq-default indicate-buffer-boundaries 'left)
 (setq-default indicate-empty-lines +1)
-
 ;; set transparency
 ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(98 85))
@@ -77,5 +77,6 @@
   (setq comint-process-echoes t))
 (add-hook 'comint-mode-hook 'echo-false-comint)
 
-;; Molokai theme
-(load "~/.emacs.d/lib/molokai-theme/molokai-theme")
+(require 'linum-relative)
+(setq linum-relative-current-symbol "->")
+(global-linum-mode)
