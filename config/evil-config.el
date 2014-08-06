@@ -10,6 +10,7 @@
 (require 'powerline-separators)
 (evil-mode 1)
 (evilnc-default-hotkeys)
+;; (powerline-evil-vim-color-theme)
 (powerline-center-evil-theme)
 
 ;; stolen from cofi https://github.com/cofi/dotfiles/blob/master/emacs.d/config/cofi-evil.el
@@ -18,12 +19,12 @@
 
 (global-evil-leader-mode)
 
-(setq evil-normal-state-tag (propertize "N" 'face '((:background "green" :foreground "black")))
-      evil-emacs-state-tag (propertize "E" 'face '((:background "orange" :foreground "black")))
-      evil-insert-state-tag (propertize "I" 'face '((:background "red")))
-      evil-motion-state-tag (propertize "M" 'face '((:background "blue")))
-      evil-visual-state-tag (propertize "V" 'face '((:background "grey80" :foreground "black")))
-      evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
+;; (setq evil-normal-state-tag (propertize "N" 'face '((:background "green" :foreground "black")))
+;;       evil-emacs-state-tag (propertize "E" 'face '((:background "orange" :foreground "black")))
+;;       evil-insert-state-tag (propertize "I" 'face '((:background "red")))
+;;       evil-motion-state-tag (propertize "M" 'face '((:background "blue")))
+;;       evil-visual-state-tag (propertize "V" 'face '((:background "grey80" :foreground "black")))
+;;       evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
 
 ;;; evil-surround
 (require-and-exec 'surround
