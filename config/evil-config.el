@@ -9,16 +9,10 @@
 (require 'powerline-themes)
 (require 'powerline-separators)
 (evil-mode 1)
+(evilnc-default-hotkeys)
 (powerline-center-evil-theme)
 
 ;; stolen from cofi https://github.com/cofi/dotfiles/blob/master/emacs.d/config/cofi-evil.el
-(defmacro require-and-exec (feature &rest body)
-  "Require the feature and execute body if it was successfull loaded."
-  (declare (indent defun))
-  `(if (require ,feature nil 'noerror)
-       (progn ,@body)
-     (message (format "%s not loaded" ,feature))))
-
 (setq evil-leader/leader ","
       evil-leader/in-all-states t)
 
@@ -85,6 +79,7 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 (cl-loop for (mode . state) in '((inferior-emacs-lisp-mode . emacs)
                                  (pylookup-mode . emacs)
                                  (cider-repl-mode . emacs)
+                                 (cider-stacktrace-mode . emacs)
                                  (comint-mode . emacs)
                                  (ebib-entry-mode . emacs)
                                  (ebib-index-mode . emacs)
