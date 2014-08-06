@@ -10,21 +10,24 @@
 (require 'powerline-separators)
 (evil-mode 1)
 (evilnc-default-hotkeys)
+;; (global-evil-tabs-mode t) ;;this works, but it's kind of annoying
 ;; (powerline-evil-vim-color-theme)
 (powerline-center-evil-theme)
+
+;; Nav https://code.google.com/p/emacs-nav/
+(require 'nav)
+(nav-disable-overeager-window-splitting)
+(evil-leader/set-key "b" 'nav-toggle)
+(evil-leader/set-key "gs" 'magit-status)
+
+;; <leader> ev opens a new split to edit this file.
+(evil-leader/set-key "ev" (lambda (arg) (interactive "P") (evil-window-vsplit 100 "~/.emacs.d/config/evil-config.el")))
 
 ;; stolen from cofi https://github.com/cofi/dotfiles/blob/master/emacs.d/config/cofi-evil.el
 (setq evil-leader/leader ","
       evil-leader/in-all-states t)
 
 (global-evil-leader-mode)
-
-;; (setq evil-normal-state-tag (propertize "N" 'face '((:background "green" :foreground "black")))
-;;       evil-emacs-state-tag (propertize "E" 'face '((:background "orange" :foreground "black")))
-;;       evil-insert-state-tag (propertize "I" 'face '((:background "red")))
-;;       evil-motion-state-tag (propertize "M" 'face '((:background "blue")))
-;;       evil-visual-state-tag (propertize "V" 'face '((:background "grey80" :foreground "black")))
-;;       evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
 
 ;;; evil-surround
 (require-and-exec 'surround
@@ -78,6 +81,8 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 
 
 (cl-loop for (mode . state) in '((inferior-emacs-lisp-mode . emacs)
+                                 (fundamental-mode . emacs)
+                                 (nav-mode . emacs)
                                  (pylookup-mode . emacs)
                                  (cider-repl-mode . emacs)
                                  (cider-stacktrace-mode . emacs)
@@ -150,7 +155,7 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 
 ;; Show red box if in Emacs mode
 ;; WRONG. This makes the cursor red all the time!
-(setq evil-emacs-state-cursor '("red" box))
+(setq evil-emacs-state-cursor '("violet" box))
 ;; Fixing it, I think.
 (setq evil-normal-state-cursor '("gray" box))
 (setq evil-visual-state-cursor '("orange" box))

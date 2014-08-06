@@ -74,7 +74,8 @@
    ;; base
    `(default ((t (:background ,molokai-bg :foreground ,molokai-fg))))
    `(cursor ((t (:background ,molokai-fg :foreground ,molokai-bg))))
-   `(fringe ((t (:foreground ,molokai-base02 :background ,molokai-bg))))
+   ;; `(fringe ((t (:foreground ,molokai-base02 :background ,molokai-bg))))
+   `(fringe ((t (:foreground ,molokai-base02 :background ,molokai-grey+5))))
    `(highlight ((t (:background ,molokai-grey))))
    `(region ((t (:background  ,molokai-grey+2))
              (t :inverse-video t)))
@@ -111,7 +112,8 @@
    `(isearch-fail ((t (:foreground ,molokai-wine :background ,molokai-darkwine))))
 
    ;; linum-mode
-   `(linum ((t (:foreground ,molokai-grey-2 :background ,molokai-grey+5))))
+   ;; `(linum ((t (:foreground ,molokai-grey-2 :background ,molokai-grey+5))))
+   `(linum ((t (:foreground ,molokai-white :background ,molokai-grey+3))))
 
    ;; hl-line-mode
    `(hl-line-face ((,class (:background ,molokai-grey+5)) (t :weight bold)))

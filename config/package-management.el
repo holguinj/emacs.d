@@ -1,5 +1,5 @@
 (defvar my-packages
-  '(ac-nrepl anaphora auctex auctex-latexmk auto-complete better-defaults change-inner cider cl cl-lib clojure-mode clojurescript-mode cm-mode diminish eldoc erc-tweet evil evil-leader evil-nerd-commenter evil-numbers evil-surround expand-region flx-ido flycheck fringe-helper git-gutter+ git-gutter-fringe+ hy-mode ido-ubiquitous latex-extra latex-pretty-symbols latex-preview-pane linum-relative magit markdown-mode paredit puppet-mode rainbow-delimiters slamhound smex)
+  '(ac-nrepl anaphora auctex auctex-latexmk auto-complete better-defaults change-inner cider cl cl-lib clojure-mode clojurescript-mode cm-mode diminish eldoc elscreen erc-tweet evil evil-leader evil-nerd-commenter evil-numbers evil-surround expand-region flx-ido flycheck fringe-helper git-gutter+ git-gutter-fringe+ hy-mode ido-ubiquitous latex-extra latex-pretty-symbols latex-preview-pane linum-relative magit markdown-mode nav paredit puppet-mode rainbow-delimiters slamhound smex)
   "A list of packages to ensure are installed at launch.")
 
 ;; M-h v package-activated-list RET
