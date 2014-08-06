@@ -1,5 +1,5 @@
 (defvar my-packages
-  '(cm-mode markdown-mode ac-nrepl auto-complete clojurescript-mode clojure-mode clojure-test-mode cider better-defaults paredit eldoc smex cl ido-ubiquitous git-gutter-fringe magit anaphora change-inner erc-tweet expand-region hy-mode diminish flx-ido flycheck puppet-mode)
+  '(linum-relative rainbow-delimiters cl-lib evil evil-leader evil-numbers evil-surround cm-mode markdown-mode ac-nrepl auto-complete clojurescript-mode clojure-mode cider better-defaults paredit eldoc smex cl ido-ubiquitous git-gutter-fringe magit anaphora change-inner erc-tweet expand-region hy-mode diminish flx-ido flycheck puppet-mode)
   "A list of packages to ensure are installed at launch.")
 
 ;; M-h v package-activated-list RET
@@ -11,8 +11,8 @@
 (require 'package)
 ;; add sources
 (dolist (source '(("melpa" . "http://melpa.milkbox.net/packages/")
-                  ("marmalade" . "http://marmalade-repo.org/packages/")
-                  ("elpa" . "http://tromey.com/elpa/")
+;                  ("marmalade" . "http://marmalade-repo.org/packages/")
+;                  ("elpa" . "http://tromey.com/elpa/")
                   ("gnu" . "http://elpa.gnu.org/packages/")
                   ("org" . "http://orgmode.org/elpa/")))
   (add-to-list 'package-archives source t))

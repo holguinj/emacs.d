@@ -1,5 +1,5 @@
-;; Molokai theme
-(load "~/.emacs.d/lib/molokai-theme/molokai-theme")
+(require 'linum-relative)
+(linum-mode)
 
 ;; Turn on Powerline
 ;;(powerline-center-evil-theme)
@@ -73,3 +73,5 @@
   (setq comint-process-echoes t))
 (add-hook 'comint-mode-hook 'echo-false-comint)
 
+;; Molokai theme
+(load "~/.emacs.d/lib/molokai-theme/molokai-theme")
