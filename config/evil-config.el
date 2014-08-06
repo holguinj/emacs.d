@@ -12,7 +12,7 @@
 (evilnc-default-hotkeys)
 ;; (global-evil-tabs-mode t) ;;this works, but it's kind of annoying
 ;; (powerline-evil-vim-color-theme)
-(powerline-center-evil-theme)
+(powerline-evil-theme)
 
 ;; Nav https://code.google.com/p/emacs-nav/
 (require 'nav)
