@@ -8,6 +8,7 @@
 (require 'powerline)
 (require 'powerline-themes)
 (require 'powerline-separators)
+
 (evil-mode 1)
 (evilnc-default-hotkeys)
 ;; (global-evil-tabs-mode t) ;;this works, but it's kind of annoying
@@ -31,6 +32,10 @@
 
 ;; <leader> ev opens a new split to edit this file.
 (evil-leader/set-key "ev" (lambda (arg) (interactive "P") (evil-window-vsplit 100 "~/.emacs.d/config/evil-config.el")))
+
+;; <leader>a -> inc, <leader>x -> dec
+(evil-leader/set-key "a" 'evil-numbers/inc-at-pt)
+(evil-leader/set-key "x" 'evil-numbers/dec-at-pt)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; stolen from cofi https://github.com/cofi/dotfiles/blob/master/emacs.d/config/cofi-evil.el
@@ -141,7 +146,6 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
              "C-e" 'end-of-line
              "C-S-d" 'evil-scroll-up
              "C-S-f" 'evil-scroll-page-up
-             "_" 'evil-first-non-blank
              "C-y" nil)
 ;; end cofi
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -172,10 +176,8 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 (my-move-key evil-motion-state-map evil-normal-state-map (kbd "RET"))
 (my-move-key evil-motion-state-map evil-normal-state-map " ")
 
-;; Show red box if in Emacs mode
-;; WRONG. This makes the cursor red all the time!
-(setq evil-emacs-state-cursor '("violet" box))
-;; Fixing it, I think.
+;; Show violet box if in Emacs mode
+(setq evil-emacs-state-cursor  '("violet" box))
 (setq evil-normal-state-cursor '("gray" box))
 (setq evil-visual-state-cursor '("orange" box))
 (setq evil-insert-state-cursor '("gray" bar))

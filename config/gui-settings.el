@@ -3,6 +3,7 @@
 (load "~/.emacs.d/lib/molokai-theme/molokai-theme")
 
 (linum-mode)
+(global-hl-line-mode)
 
 ;; Disable toolbars
 (tool-bar-mode -1)
