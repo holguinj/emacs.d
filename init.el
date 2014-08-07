@@ -3,6 +3,7 @@
 (load "~/.emacs.d/config/ido-config")
 (load "~/.emacs.d/config/cider-config")
 (load "~/.emacs.d/config/paredit-config")
+(load "~/.emacs.d/config/pretty")
 (load "~/.emacs.d/config/hooks")
 (load "~/.emacs.d/config/latex-config")
 (load "~/.emacs.d/config/evil-config")
