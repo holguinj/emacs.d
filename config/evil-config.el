@@ -128,6 +128,7 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
              "C-t" 'transpose-chars
              "C-:" 'eval-expression
              "C-u" 'evil-scroll-up
+             "M-." 'cider-jump-to-var
              "D" 'paredit-kill
              "C" (lambda (arg) (interactive "P") (paredit-kill arg) (evil-insert arg))
              "I" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (evil-insert arg))
