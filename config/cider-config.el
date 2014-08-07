@@ -23,3 +23,6 @@
 
 '(eval-after-load "cider"
   (define-key cider-repl-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
+
+;; Pretty printing
+(add-hook 'cider-repl-mode-hook 'cider-repl-toggle-pretty-printing)
