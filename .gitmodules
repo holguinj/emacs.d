@@ -1,3 +1,6 @@
 [submodule "lib/powerline"]
 	path = lib/powerline
 	url = https://github.com/Dewdrops/powerline.git
+[submodule "lib/monokai-emacs"]
+	path = lib/monokai-emacs
+	url = https://github.com/oneKelvinSmith/monokai-emacs.git

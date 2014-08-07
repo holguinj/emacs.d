@@ -2,6 +2,11 @@
 ;; Molokai theme
 (load "~/.emacs.d/lib/molokai-theme/molokai-theme")
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Monokai theme
+;; (load "~/.emacs.d/lib/monokai-emacs/monokai-theme")
+;; (load-theme 'monokai t)
+
 (linum-mode)
 (global-hl-line-mode)
 
