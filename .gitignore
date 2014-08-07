@@ -35,3 +35,9 @@ tramp
 *.ido.last~
 /backups/
 /elpa/
+
+/places/
+/places
+/backups/!Users!justin!.ido.last~
+ac-comphist.dat
+/ac-comphist.dat
