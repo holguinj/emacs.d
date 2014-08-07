@@ -184,37 +184,12 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 (setq evil-insert-state-cursor '("gray" bar))
 (setq evil-motion-state-cursor '("gray" box))
 
+;; Leaving this disabled for now since it just caused me pain before
+;; but it might be useful at some point:
+;; 
 ;; (defcustom evil-insert-state-modes
 ;;   '(git-commit-mode comint-mode erc-mode eshell-mode geiser-repl-mode gud-mode inferior-apl-mode inferior-caml-mode inferior-emacs-lisp-mode inferior-j-mode inferior-python-mode inferior-scheme-mode inferior-sml-mode internal-ange-ftp-mode prolog-inferior-mode reb-mode shell-mode slime-repl-mode term-mode wdired-mode)
 ;;   "Modes that should come up in Insert state."
 ;;   :type  '(repeat symbol)
 ;;   :group 'evil)
 
-(evil-define-operator evil-delete (beg end type register yank-handler)
-  "Altered to respect paredit! -JHH
-   Delete text from BEG to END with TYPE.
-   Save in REGISTER or in the kill-ring with YANK-HANDLER."
-  (interactive "<R><x><y>")
-  (unless register
-    (let ((text (filter-buffer-substring beg end)))
-      (unless (string-match-p "\n" text)
-        ;; set the small delete register
-        (evil-set-register ?- text))))
-  (let ((evil-was-yanked-without-register nil))
-    (evil-yank beg end type register yank-handler))
-  (cond
-   ((eq type 'block)
-    (evil-apply-on-block #'paredit-delete-region beg end nil))
-   ((and (eq type 'line)
-         (= end (point-max))
-         (or (= beg end)
-             (/= (char-before end) ?\n))
-         (/= beg (point-min))
-         (=  (char-before beg) ?\n))
-    (paredit-delete-region (1- beg) end))
-   (t
-    (paredit-delete-region beg end)))
-  ;; place cursor on beginning of line
-  (when (and (evil-called-interactively-p)
-             (eq type 'line))
-    (evil-first-non-blank)))

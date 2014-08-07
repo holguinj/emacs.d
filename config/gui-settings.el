@@ -8,7 +8,7 @@
 ;; (load-theme 'monokai t)
 
 (linum-mode)
-(global-hl-line-mode)
+;; (global-hl-line-mode)
 
 ;; Disable toolbars
 (tool-bar-mode -1)

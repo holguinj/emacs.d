@@ -8,4 +8,4 @@
 (add-hook 'clojure-mode-hook 'esk-pretty-fn)
 (add-hook 'clojurescript-mode-hook 'esk-pretty-fn)
 
-(global-pretty-lambda-mode)
+;; (global-pretty-lambda-mode)
