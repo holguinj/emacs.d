@@ -18,11 +18,21 @@
 (require 'nav)
 (nav-disable-overeager-window-splitting)
 (evil-leader/set-key "b" 'nav-toggle)
-(evil-leader/set-key "gs" 'magit-status)
+
+; ,W to cleanup whitespace
+(evil-leader/set-key "W" 'whitespace-cleanup)
+
+;; Magit key (RIP Fugitive)
+(evil-leader/set-key "g" 'magit-status)
+
+;; map ,cc and ,dd to what I feel in my heart cc and dd should do. Which is respect paredit.
+(evil-leader/set-key "cc" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (paredit-kill arg) (evil-insert arg)))
+(evil-leader/set-key "dd" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (paredit-kill arg)))
 
 ;; <leader> ev opens a new split to edit this file.
 (evil-leader/set-key "ev" (lambda (arg) (interactive "P") (evil-window-vsplit 100 "~/.emacs.d/config/evil-config.el")))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; stolen from cofi https://github.com/cofi/dotfiles/blob/master/emacs.d/config/cofi-evil.el
 (setq evil-leader/leader ","
       evil-leader/in-all-states t)
@@ -114,6 +124,8 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
              "C-:" 'eval-expression
              "C-u" 'evil-scroll-up
              "D" 'paredit-kill
+             "C" (lambda (arg) (interactive "P") (paredit-kill arg) (evil-insert arg))
+             "I" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (evil-insert arg))
              ;":" 'evil-repeat-find-char-reverse
              "gH" 'evil-window-top
              "gL" 'evil-window-bottom
@@ -132,6 +144,13 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
              "_" 'evil-first-non-blank
              "C-y" nil)
 ;; end cofi
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; Return some Emacs conveniences to insert mode
+(define-key evil-insert-state-map (kbd "C-k") 'paredit-kill)
+(define-key evil-insert-state-map (kbd "C-y") 'yank)
+
 ;; move between windows like a civilized fucking human being
 (define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
 (define-key evil-normal-state-map (kbd "C-h") 'windmove-left)

@@ -21,6 +21,11 @@
 ;; replace selection when yanking
 (delete-selection-mode)
 
+;; linum-relative doesn't provide a nice way to customize this.
+(defface linum-relative-current-face
+  '((t :inherit linum :foreground "DarkOrange2" :background "grey11" :weight bold))
+  "Face for displaying current line."
+  :group 'linum-relative)
 
 ;; Move focus to new split (duh)
 (defadvice split-window (after move-point-to-new-window activate)
@@ -78,5 +83,6 @@
 (add-hook 'comint-mode-hook 'echo-false-comint)
 
 (require 'linum-relative)
-(setq linum-relative-current-symbol "->")
+;; (setq linum-relative-current-symbol "->")
+(setq linum-relative-current-symbol "") ;; just show the current (absolute) line number
 (global-linum-mode)
