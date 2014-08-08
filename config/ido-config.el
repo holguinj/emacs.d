@@ -3,7 +3,19 @@
 (ido-mode 1)
 (ido-ubiquitous-mode)
 
-
+(setq ido-ignore-files (append
+                        ido-ignore-files
+                        '(
+                          "^auto/$"
+                          ".o"
+                          ".bin"
+                          ".elc"
+                          ".un~"
+                          ".bin"
+                          ".swp"
+                          ".swo"
+                          "_region_"
+                          )))
 (setq ido-use-filename-at-point 'guess)
 
 ;; Used to create throwaway buffers without annoying prompts
