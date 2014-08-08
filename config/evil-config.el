@@ -148,13 +148,15 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
              "C-S-d" 'evil-scroll-up
              "C-S-f" 'evil-scroll-page-up
              "C-y" nil)
-;; end cofi
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; end cofi ======================================================================
 
 
 ;; Return some Emacs conveniences to insert mode
 (define-key evil-insert-state-map (kbd "C-k") 'paredit-kill)
 (define-key evil-insert-state-map (kbd "C-y") 'yank)
+(define-key evil-insert-state-map (kbd "C-p") 'evil-scroll-line-up)
+(define-key evil-insert-state-map (kbd "C-n") 'evil-scroll-line-down)
+(define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
 
 ;; move between windows like a civilized fucking human being
 (define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
