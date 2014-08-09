@@ -19,9 +19,11 @@
 ;; (defun set-auto-complete-as-completion-at-point-function ()
 ;;   (setq completion-at-point-functions '(auto-complete)))
 
-;; ;; ac-nrepl docs
-;; (eval-after-load "cider"
-;;   '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
+;; ===============================================================================
+;; ac-nrepl docs maybe don't suck ================================================
+;; ===============================================================================
+(eval-after-load "cider"
+  '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
 
-;; '(eval-after-load "cider"
-;;   (define-key cider-repl-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
+'(eval-after-load "cider"
+  (define-key cider-repl-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
