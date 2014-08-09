@@ -26,6 +26,10 @@
 ;; Magit key (RIP Fugitive)
 (evil-leader/set-key "g" 'magit-status)
 
+;; M-+ for zoom in, M-_ for zoom out (yeah, _ is shift-minus)
+(define-key evil-normal-state-map (kbd "M-+") 'text-scale-increase)
+(define-key evil-normal-state-map (kbd "M-_") 'text-scale-decrease)
+
 ;; map ,cc and ,dd to what I feel in my heart cc and dd should do. Which is respect paredit.
 (evil-leader/set-key "cc" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (paredit-kill arg) (evil-insert arg)))
 (evil-leader/set-key "dd" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (paredit-kill arg)))
