@@ -13,6 +13,9 @@
 ;; s-f to visit file/url under point
 (global-set-key (kbd "s-f") 'ffap)
 
+;; map s-h to helpy things
+(global-set-key (kbd "s-h") 'help)
+
 ;; expand-region is cool
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)

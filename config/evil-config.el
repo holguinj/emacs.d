@@ -105,6 +105,7 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
                                  (pylookup-mode . emacs)
                                  (cider-repl-mode . emacs)
                                  (cider-stacktrace-mode . emacs)
+                                 (cider-docview-mode . emacs)
                                  (comint-mode . emacs)
                                  (ebib-entry-mode . emacs)
                                  (ebib-index-mode . emacs)

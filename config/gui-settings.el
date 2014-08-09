@@ -27,6 +27,17 @@
 ;; replace selection when yanking
 (delete-selection-mode)
 
+;; company-mode customization
+(require 'color)
+
+(let ((bg (face-attribute 'default :background)))
+  (custom-set-faces
+   `(company-tooltip ((t (:inherit default :background ,(color-lighten-name bg 2)))))
+   `(company-scrollbar-bg ((t (:background ,(color-lighten-name bg 10)))))
+   `(company-scrollbar-fg ((t (:background ,(color-lighten-name bg 5)))))
+   `(company-tooltip-selection ((t (:inherit font-lock-function-name-face))))
+   `(company-tooltip-common ((t (:inherit font-lock-constant-face))))))
+
 ;; linum-relative doesn't provide a nice way to customize this.
 (defface linum-relative-current-face
   '((t :inherit linum :foreground "DarkOrange2" :background "grey11" :weight bold))
