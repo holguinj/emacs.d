@@ -163,6 +163,9 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 (define-key evil-insert-state-map (kbd "C-n") 'evil-scroll-line-down)
 (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
 
+;; TBQH, I always want paredit-newline when I hit return:
+(define-key evil-insert-state-map (kbd "RET") 'paredit-newline)
+
 ;; move between windows like a civilized fucking human being
 (define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
 (define-key evil-normal-state-map (kbd "C-h") 'windmove-left)
