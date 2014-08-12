@@ -112,6 +112,7 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
                                  (ebib-log-mode . emacs)
                                  (elfeed-show-mode . emacs)
                                  (elfeed-search-mode . emacs)
+                                 (ensime-inf-mode . emacs)
                                  (gtags-select-mode . emacs)
                                  (git-commit-mode . emacs)
                                  (git-rebase-mode . emacs)

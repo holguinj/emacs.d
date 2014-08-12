@@ -1,6 +1,9 @@
 (global-auto-complete-mode -1) ;; ac-mode seems to suck
 (add-hook 'after-init-hook 'global-company-mode) ;; company-mode supposedly does not suck
 
+(add-hook 'markdown-mode-hook 'visual-line-mode)
+(add-hook 'org-mode-hook 'visual-line-mode)
+
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
 (add-hook 'emacs-lisp-mode-hook       #'enable-paredit-mode)
 (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
@@ -14,8 +17,9 @@
 (add-hook 'cider-repl-mode-hook       #'enable-paredit-mode)
 (add-hook 'clojure-mode-hook          #'rainbow-delimiters-mode)
 
+(require 'ensime)
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
-(add-hook 'markdown-mode-hook 'visual-line-mode)
 
 ;; I disabled eldoc-mode because I thought it was messing with CIDER. But I now think it was ac-mode.
 ;; Leaving the following here in case I change my mind again.
