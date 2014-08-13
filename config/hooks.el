@@ -20,17 +20,7 @@
 (require 'ensime)
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
-
-;; I disabled eldoc-mode because I thought it was messing with CIDER. But I now think it was ac-mode.
-;; Leaving the following here in case I change my mind again.
-;; ;; ElDoc mode SUCKS
-;; (defun disable-eldoc-mode ()
-;;   (eldoc-mode -1))
-
-;; (add-hook 'clojure-mode-hook          #'disable-eldoc-mode)
-;; (add-hook 'cider-repl-mode-hook       #'disable-eldoc-mode)
-
-;; Disabling auto-complete-mode
-;; (add-hook 'auto-complete-mode-hook 'set-auto-complete-as-completion-at-point-function)
-;; (add-hook 'cider-repl-mode-hook 'set-auto-complete-as-completion-at-point-function)
-;; (add-hook 'cider-mode-hook 'set-auto-complete-as-completion-at-point-function)
+;; Recognize markdown files
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))

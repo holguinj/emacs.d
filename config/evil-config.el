@@ -15,10 +15,6 @@
 ;; (powerline-evil-vim-color-theme)
 (powerline-evil-theme)
 
-;; Nav https://code.google.com/p/emacs-nav/
-(require 'nav)
-(nav-disable-overeager-window-splitting)
-
 ;==================================================================================================================
 ;==================================================================================================================
 ;; LEADER LEADER LEADER LEADER
@@ -169,6 +165,9 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 (define-key evil-insert-state-map (kbd "C-p") 'evil-scroll-line-up)
 (define-key evil-insert-state-map (kbd "C-n") 'evil-scroll-line-down)
 (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
+
+;; I don't know why this is necessary:
+(define-key evil-insert-state-map (kbd "C-w") 'evil-delete-backward-word)
 
 ;; TBQH, I always want paredit-newline when I hit return:
 (define-key evil-insert-state-map (kbd "RET") 'paredit-newline)
