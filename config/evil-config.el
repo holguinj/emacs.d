@@ -18,9 +18,19 @@
 ;; Nav https://code.google.com/p/emacs-nav/
 (require 'nav)
 (nav-disable-overeager-window-splitting)
-(evil-leader/set-key "b" 'nav-toggle)
 
-; ,W to cleanup whitespace
+;==================================================================================================================
+;==================================================================================================================
+;; LEADER LEADER LEADER LEADER
+;; LEADER LEADER LEADER LEADER
+;; LEEEEAAAAAADERRRRRR LEAAAADEERRRRRRRR
+;==================================================================================================================
+;; Set leader key to the spacebar
+(setq evil-leader/leader "<SPC>" ;; cool tip from http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
+      evil-leader/in-all-states t)
+(global-evil-leader-mode)
+
+; <leader> W to cleanup whitespace
 (evil-leader/set-key "W" 'whitespace-cleanup)
 
 ;; Magit key (RIP Fugitive)
@@ -30,7 +40,7 @@
 (define-key evil-normal-state-map (kbd "M-+") 'text-scale-increase)
 (define-key evil-normal-state-map (kbd "M-_") 'text-scale-decrease)
 
-;; map ,cc and ,dd to what I feel in my heart cc and dd should do. Which is respect paredit.
+;; map <leader> cc and <leader> dd to what I feel in my heart cc and dd should do. Which is respect paredit.
 (evil-leader/set-key "cc" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (paredit-kill arg) (evil-insert arg)))
 (evil-leader/set-key "dd" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (paredit-kill arg)))
 
@@ -41,13 +51,9 @@
 (evil-leader/set-key "a" 'evil-numbers/inc-at-pt)
 (evil-leader/set-key "x" 'evil-numbers/dec-at-pt)
 
+;==================================================================================================================
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; stolen from cofi https://github.com/cofi/dotfiles/blob/master/emacs.d/config/cofi-evil.el
-(setq evil-leader/leader ","
-      evil-leader/in-all-states t)
-
-(global-evil-leader-mode)
-
 ;;; evil-surround
 (require-and-exec 'surround
   (setq-default surround-pairs-alist '((?\( . ("(" . ")"))

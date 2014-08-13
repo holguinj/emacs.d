@@ -1,3 +1,5 @@
+(setq load-prefer-newer t) ;; trying to fix "source file newer than byte compiled file" errors
+
 (load "~/.emacs.d/config/package-management")
 (load "~/.emacs.d/config/key-bindings")
 (load "~/.emacs.d/config/ido-config")
