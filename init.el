@@ -11,6 +11,7 @@
 (load "~/.emacs.d/config/evil-config")
 (load "~/.emacs.d/config/evil-paredit")
 (load "~/.emacs.d/config/gui-settings")
+(load "~/.emacs.d/config/haskell")
 (server-start)
 
 (custom-set-variables

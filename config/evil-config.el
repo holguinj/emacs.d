@@ -118,6 +118,7 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
                                  (gtags-select-mode . emacs)
                                  (git-commit-mode . emacs)
                                  (git-rebase-mode . emacs)
+                                 (haskell-interactive-mode . emacs)
                                  (shell-mode . emacs)
                                  (term-mode . emacs)
                                  (bc-menu-mode . emacs)
