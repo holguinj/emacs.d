@@ -103,3 +103,6 @@
 ;; (setq linum-relative-current-symbol "->")
 (setq linum-relative-current-symbol "") ;; just show the current (absolute) line number
 (global-linum-mode)
+
+;; turn off annoying visible bell
+(setq visible-bell nil)

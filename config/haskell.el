@@ -7,7 +7,7 @@
 
 ;; Use hasktags
 (setenv "PATH" (concat "~/.cabal/bin:" (getenv "PATH")))
-(add-to-list 'exec-path "~/.cabal/bin")
+(add-to-list 'exec-path "~/Library/Haskell/bin")
 (custom-set-variables '(haskell-tags-on-save t))
 
 ;; A bunch of interactive shite
@@ -36,3 +36,7 @@
 (autoload 'ghc-init "ghc" nil t)
 (autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+
+;; autocomlete
+(eval-after-load 'company '(add-to-list 'company-backends 'company-ghc))
+(custom-set-variables '(company-ghc-show-info t))
