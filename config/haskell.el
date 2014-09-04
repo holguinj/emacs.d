@@ -1,12 +1,17 @@
 ;; Indentation
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
+;; Use return like a real person
+(add-hook 'haskell-mode-hook
+          (lambda ()
+            (define-key evil-insert-state-map (kbd "RET") 'newline)))
+
 ;; F8 to navigate imports
 (eval-after-load 'haskell-mode
           '(define-key haskell-mode-map [f8] 'haskell-navigate-imports))
 
 ;; Use hasktags
-(setenv "PATH" (concat "~/.cabal/bin:" (getenv "PATH")))
+(add-to-list 'exec-path "~/.cabal/bin")
 (add-to-list 'exec-path "~/Library/Haskell/bin")
 (custom-set-variables '(haskell-tags-on-save t))
 
