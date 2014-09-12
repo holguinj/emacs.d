@@ -13,6 +13,7 @@
 (evilnc-default-hotkeys)
 ;; (global-evil-tabs-mode t) ;;this works, but it's kind of annoying
 ;; (powerline-evil-vim-color-theme)
+(global-evil-surround-mode)
 (powerline-evil-theme)
 
 ;==================================================================================================================
@@ -119,6 +120,8 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
                                  (git-commit-mode . emacs)
                                  (git-rebase-mode . emacs)
                                  (haskell-interactive-mode . emacs)
+                                 (haskell-error-mode . emacs)
+                                 (dired-mode . emacs)
                                  (shell-mode . emacs)
                                  (term-mode . emacs)
                                  (bc-menu-mode . emacs)
