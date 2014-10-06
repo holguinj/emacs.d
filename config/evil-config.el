@@ -173,9 +173,6 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 ;; I don't know why this is necessary:
 (define-key evil-insert-state-map (kbd "C-w") 'evil-delete-backward-word)
 
-;; TBQH, I always want paredit-newline when I hit return:
-(define-key evil-insert-state-map (kbd "RET") 'paredit-newline)
-
 ;; move between windows like a civilized fucking human being
 (define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
 (define-key evil-normal-state-map (kbd "C-h") 'windmove-left)
@@ -188,6 +185,10 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 (define-key evil-normal-state-map (kbd "gk") 'evil-previous-line)
 (define-key evil-normal-state-map (kbd "gj") 'evil-next-line)
 
+(define-key evil-motion-state-map (kbd "k") 'evil-previous-visual-line)
+(define-key evil-motion-state-map (kbd "j") 'evil-next-visual-line)
+(define-key evil-motion-state-map (kbd "gk") 'evil-previous-line)
+(define-key evil-motion-state-map (kbd "gj") 'evil-next-line)
 
 ;; remap SPC and RET so that they won't be active in evil mode (since they just duplicate j and l)
 (defun my-move-key (keymap-from keymap-to key)
@@ -203,13 +204,3 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 (setq evil-visual-state-cursor '("orange" box))
 (setq evil-insert-state-cursor '("gray" bar))
 (setq evil-motion-state-cursor '("gray" box))
-
-;; Leaving this disabled for now since it just caused me pain before
-;; but it might be useful at some point:
-;; 
-;; (defcustom evil-insert-state-modes
-;;   '(git-commit-mode comint-mode erc-mode eshell-mode geiser-repl-mode gud-mode inferior-apl-mode inferior-caml-mode inferior-emacs-lisp-mode inferior-j-mode inferior-python-mode inferior-scheme-mode inferior-sml-mode internal-ange-ftp-mode prolog-inferior-mode reb-mode shell-mode slime-repl-mode term-mode wdired-mode)
-;;   "Modes that should come up in Insert state."
-;;   :type  '(repeat symbol)
-;;   :group 'evil)
-
