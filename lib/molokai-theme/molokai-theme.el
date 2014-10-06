@@ -135,13 +135,13 @@
 
    ;; rainbow delimiters (from https://github.com/tungd/dotfiles/blob/10e31d2189d567970a40be06a84671f7517d3012/emacs/themes/custom-theme.el)
    ;; added by JHH
-   `(rainbow-delimiters-depth-1-face ((t :foreground "#81af34")))
-   `(rainbow-delimiters-depth-2-face ((t :foreground "#deae3e")))
-   `(rainbow-delimiters-depth-3-face ((t :foreground "#d97a35")))
-   `(rainbow-delimiters-depth-4-face ((t :foreground "#4e9f75")))
+   `(rainbow-delimiters-depth-1-face ((t :foreground "dark sea green")))
+   `(rainbow-delimiters-depth-2-face ((t :foreground "pale goldenrod")))
+   `(rainbow-delimiters-depth-3-face ((t :foreground "light steel blue")))
+   `(rainbow-delimiters-depth-4-face ((t :foreground "#81af34")))
    `(rainbow-delimiters-depth-5-face ((t :foreground "#11535F")))
    `(rainbow-delimiters-depth-6-face ((t :foreground "#00959e")))
-   `(rainbow-delimiters-depth-7-face ((t :foreground "#8700ff")))
+   `(rainbow-delimiters-depth-7-face ((t :foreground "#d97a35")))
    `(rainbow-delimiters-unmatched-face ((t :background "#d13120" :underline t)))
 
 
