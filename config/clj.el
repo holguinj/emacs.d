@@ -3,6 +3,17 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Custom functions
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun new-lein-project (name &optional template)
+  "Interactively ask for a project and optional template name, then creates a
+  Leiningen project with the parameters. Opens the project.clj file."
+  (interactive "sProject name: \nMTemplate (optional): ")
+  (shell-command-to-string
+    (concat "cd ~/src && "
+            "lein new "
+            template
+            " " name))
+  (find-file (concat "~/src/" name "/project.clj")))
+
 (defun helm-clojure-headlines ()
   "Display headlines for the current Clojure file."
   (interactive)
