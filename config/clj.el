@@ -19,11 +19,15 @@
   :lighter " ABClj"
   :keymap (let ((map (make-sparse-keymap)))
             (define-key map (kbd "C-c h") 'helm-clojure-headlines)
-            (define-key map (kbd "M-.") 'cider-jump-to-var)
-            (define-key map (kbd "S-g") 'cider-grimoire-web)
-            (define-key map (kbd "S-j") 'cider-docview-javadoc)
             map)
   (evil-leader/set-key-for-mode 'always-be-clojing-mode "h" 'helm-clojure-headlines)
+  (fill-keymap evil-normal-state-local-map
+    "M-." 'cider-jump-to-var
+    "M-," 'cider-jump-back
+    "C-c h" 'helm-clojure-headlines
+    "C-c C-d g" 'cider-grimoire-web
+    "C-c C-d j" 'cider-docview-javadoc)
+  ;; (define-key evil-normal-state-local-map (kbd "M-.") 'cider-jump-to-var)
   (define-key evil-insert-state-local-map (kbd "RET") 'paredit-newline))
 
 (add-hook 'clojure-mode-hook 'always-be-clojing-mode)
