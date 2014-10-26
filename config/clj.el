@@ -20,6 +20,8 @@
   :keymap (let ((map (make-sparse-keymap)))
             (define-key map (kbd "C-c h") 'helm-clojure-headlines)
             (define-key map (kbd "M-.") 'cider-jump-to-var)
+            (define-key map (kbd "S-g") 'cider-grimoire-web)
+            (define-key map (kbd "S-j") 'cider-docview-javadoc)
             map)
   (evil-leader/set-key-for-mode 'always-be-clojing-mode "h" 'helm-clojure-headlines)
   (define-key evil-insert-state-local-map (kbd "RET") 'paredit-newline))
