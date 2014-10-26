@@ -10,7 +10,8 @@
 (require 'powerline-separators)
 
 (evil-mode 1)
-(evilnc-default-hotkeys)
+;; (setq evilnc-comment-operator (kbd "SPC"))
+;; (evilnc-default-hotkeys) ;; seems to be breaking hella shit
 ;; (global-evil-tabs-mode t) ;;this works, but it's kind of annoying
 ;; (powerline-evil-vim-color-theme)
 (global-evil-surround-mode)
