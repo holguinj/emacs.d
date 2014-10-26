@@ -9,7 +9,7 @@
   (helm-mode t)
   (helm :sources '(((name . "Clojure Headlines")
                     (volatile)
-                    (headline "^[;(]")))))
+                    (headline "^[;(]\\|testing")))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Minor mode definition
