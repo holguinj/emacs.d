@@ -18,6 +18,7 @@
   "Display headlines for the current Clojure file."
   (interactive)
   (helm-mode t)
+  (jit-lock-fontify-now) ;; https://groups.google.com/forum/#!topic/emacs-helm/YwqsyRRHjY4
   (helm :sources '(((name . "Clojure Headlines")
                     (volatile)
                     (headline "^[;(]\\|testing")))))
