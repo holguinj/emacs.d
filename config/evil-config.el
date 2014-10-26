@@ -28,6 +28,16 @@
       evil-leader/in-all-states t)
 (global-evil-leader-mode)
 
+(evil-leader/set-key
+  "ci" 'evilnc-comment-or-uncomment-lines
+  "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
+  "ll" 'evilnc-quick-comment-or-uncomment-to-the-line
+  "cp" 'evilnc-comment-or-uncomment-paragraphs
+  "cr" 'comment-or-uncomment-region
+  "cv" 'evilnc-toggle-invert-comment-line-by-line
+  "\\" 'evilnc-comment-operator
+  )
+
 ; <leader> W to cleanup whitespace
 (evil-leader/set-key "W" 'whitespace-cleanup)
 
