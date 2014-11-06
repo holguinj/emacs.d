@@ -12,7 +12,8 @@
 (load "~/.emacs.d/config/evil-paredit")
 (load "~/.emacs.d/config/gui-settings")
 (load "~/.emacs.d/config/haskell")
-(load "~/.emacs.d/config/clj.el")
+(load "~/.emacs.d/config/clj")
+(load "~/.emacs.d/config/ag")
 (server-start)
 
 (custom-set-variables

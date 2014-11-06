@@ -29,6 +29,7 @@
 (global-evil-leader-mode)
 
 (evil-leader/set-key
+  "ag" 'ag-project
   "ci" 'evilnc-comment-or-uncomment-lines
   "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
   "ll" 'evilnc-quick-comment-or-uncomment-to-the-line
@@ -114,13 +115,16 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
 
 
 (cl-loop for (mode . state) in '((inferior-emacs-lisp-mode . emacs)
+                                 (ag-mode . emacs)
                                  (fundamental-mode . emacs)
                                  (nav-mode . emacs)
                                  (pylookup-mode . emacs)
                                  ;; CIDER modes
                                  (cider-docview-mode . emacs)
                                  (cider-inspector-mode . emacs)
+                                 (cider-macroexpansion-mode . emacs)
                                  (cider-repl-mode . emacs)
+                                 (cider-result-mode . emacs)
                                  (cider-stacktrace-mode . emacs)
                                  (cider-test-report-mode . emacs)
 
