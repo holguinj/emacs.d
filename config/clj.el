@@ -40,7 +40,18 @@
     "C-c C-d g" 'cider-grimoire-web
     "C-c C-d j" 'cider-docview-javadoc)
   ;; (define-key evil-normal-state-local-map (kbd "M-.") 'cider-jump-to-var)
-  (define-key evil-insert-state-local-map (kbd "RET") 'paredit-newline))
+  (define-key evil-insert-state-local-map (kbd "RET") 'paredit-newline)
+  
+  ;; other customizations
+  ;;
+  ;; break -> and ->> so Dan will be happy
+  (define-clojure-indent
+    (->  1)
+    (->> 1))
+  
+  ;; preserve "proper" two-space indentation when functions are on their own lines
+;  (setq lisp-indent-offset 2)
+  )
 
 (add-hook 'clojure-mode-hook 'always-be-clojing-mode)
 
