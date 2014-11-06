@@ -13,6 +13,9 @@
 ;; Disable toolbars
 (tool-bar-mode -1)
 
+;; Highlight the current line
+(hl-line-mode 't)
+
 ;; Git gutter fringe
 (global-git-gutter+-mode t)
 (require 'git-gutter-fringe+)
