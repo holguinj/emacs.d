@@ -21,7 +21,7 @@
   (jit-lock-fontify-now) ;; https://groups.google.com/forum/#!topic/emacs-helm/YwqsyRRHjY4
   (helm :sources '(((name . "Clojure Headlines")
                     (volatile)
-                    (headline "^[;(]\\|testing")))))
+                    (headline "^(\\|testing\\|^;.*[A-Za-z]+")))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Minor mode definition
