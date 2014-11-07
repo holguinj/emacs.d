@@ -14,6 +14,7 @@
 (load "~/.emacs.d/config/haskell")
 (load "~/.emacs.d/config/clj")
 (load "~/.emacs.d/config/ag")
+(load "~/.emacs.d/config/helm")
 (server-start)
 
 (custom-set-variables
