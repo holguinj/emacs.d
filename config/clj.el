@@ -33,6 +33,10 @@
             (define-key map (kbd "C-c h") 'helm-clojure-headlines)
             map)
   (evil-leader/set-key-for-mode 'always-be-clojing-mode "h" 'helm-clojure-headlines)
+  (evil-leader/set-key-for-mode 'always-be-clojing-mode "sp" "#spy/p ")
+  (evil-leader/set-key-for-mode 'always-be-clojing-mode "sd" "#spy/d ")
+  (evil-leader/set-key-for-mode 'always-be-clojing-mode "st" "#spy/t ")
+
   (fill-keymap evil-normal-state-local-map
     "M-." 'cider-jump-to-var
     "M-," 'cider-jump-back
