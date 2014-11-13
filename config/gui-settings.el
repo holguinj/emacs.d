@@ -61,7 +61,7 @@
 
 ;; font stuff
 (add-to-list 'default-frame-alist '(font . "Ubuntu Mono-16"))
-(set-frame-font "Ubuntu Mono-17" nil t)
+(set-frame-font "Ubuntu Mono-15" nil t)
 
 ;; window size http://www.jesshamrick.com/2013/03/31/macs-and-emacs/
 (defun custom-set-frame-size ()
