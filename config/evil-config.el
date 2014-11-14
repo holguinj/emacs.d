@@ -59,6 +59,9 @@
 ;; <leader> ev opens a new split to edit this file.
 (evil-leader/set-key "ev" (lambda (arg) (interactive "P") (evil-window-vsplit 100 "~/.emacs.d/config/evil-config.el")))
 
+;; I wish this wasn't necessary
+(define-key evil-normal-state-map (kbd ",") 'evil-repeat-find-char-reverse)
+
 ;==================================================================================================================
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; stolen from cofi https://github.com/cofi/dotfiles/blob/master/emacs.d/config/cofi-evil.el
