@@ -1,6 +1,10 @@
 ;; RMS is wrong about sentences.
 (setq sentence-end-double-space nil)
 
+;; text scale stuff
+(global-set-key (kbd "M-+") 'text-scale-increase)
+(global-set-key (kbd "M-_") 'text-scale-decrease)
+
 ;; Use helm by default for buffer switching
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 
