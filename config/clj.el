@@ -1,4 +1,5 @@
 (require 'evil)
+(require 'evil-leader)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Custom functions
@@ -23,6 +24,12 @@
                     (volatile)
                     (headline "^(\\|testing\\|^;.*[A-Za-z]+")))))
 
+(defun text-inserter (text)
+  "Returns a function that can be called interactively (with no args)
+  to insert the given string"
+  (lambda (&args) (interactive "P")
+    (insert text)))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Minor mode definition
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -31,11 +38,15 @@
   :lighter " ABClj"
   :keymap (let ((map (make-sparse-keymap)))
             (define-key map (kbd "C-c h") 'helm-clojure-headlines)
+            (define-key map (kbd "C-x 3") (lambda (&args) (interactive "P") (split-window-horizontally) (helm-projectile)))
+            (define-key map (kbd "C-x 2") (lambda (&args) (interactive "P") (split-window-vertically) (helm-projectile)))
             map)
-  (evil-leader/set-key-for-mode 'always-be-clojing-mode "h" 'helm-clojure-headlines)
-  (evil-leader/set-key-for-mode 'always-be-clojing-mode "sp" "i#spy/p <ESC>")
-  (evil-leader/set-key-for-mode 'always-be-clojing-mode "sd" "i#spy/d <ESC>")
-  (evil-leader/set-key-for-mode 'always-be-clojing-mode "st" "i#spy/t <ESC>")
+  (evil-leader/set-leader "<SPC>")
+
+  (evil-leader/set-key-for-mode 'clojure-mode "h"   #'helm-clojure-headlines)
+  (evil-leader/set-key-for-mode 'clojure-mode "s p" (lambda (&args) (interactive "P") (insert "#spy/p ")))
+  (evil-leader/set-key-for-mode 'clojure-mode "s d" (lambda (&args) (interactive "P") (insert "#spy/p ")))
+  (evil-leader/set-key-for-mode 'clojure-mode "s t" (lambda (&args) (interactive "P") (insert "#spy/p ")))
 
   (fill-keymap evil-normal-state-local-map
     "M-." 'cider-jump-to-var
@@ -51,7 +62,8 @@
   ;; break -> and ->> so Dan will be happy
   (define-clojure-indent
     (->  1)
-    (->> 1))
+    (->> 1)
+    (\(  1))
   
   ;; preserve "proper" two-space indentation when functions are on their own lines
 ;  (setq lisp-indent-offset 2)
