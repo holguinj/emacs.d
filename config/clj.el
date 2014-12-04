@@ -24,6 +24,18 @@
                     (volatile)
                     (headline "^(\\|testing\\|^;.*[A-Za-z]+")))))
 
+(defun remove-spyscope-traces (start end)
+  "Remove all #spy/... calls from the region/buffer.
+  Cribbed from http://wikemacs.org/wiki/Emacs_Lisp_Cookbook#Scripted_Use"
+  (interactive "r")
+  (save-restriction
+    (narrow-to-region start end)
+    (goto-char 1)
+    (let ((case-fold-search nil))
+      (while (search-forward-regexp "#spy/[pdt] " nil t)
+        (replace-match ""
+                       t nil)))))
+
 (defun text-inserter (text)
   "Returns a function that can be called interactively (with no args)
   to insert the given string"
@@ -63,7 +75,7 @@
   (define-clojure-indent
     (->  1)
     (->> 1)
-    (\(  1))
+    (\([a-z]  1))
   
   ;; preserve "proper" two-space indentation when functions are on their own lines
 ;  (setq lisp-indent-offset 2)
