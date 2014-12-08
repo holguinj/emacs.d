@@ -24,6 +24,16 @@
                     (volatile)
                     (headline "^(\\|testing\\|^;.*[A-Za-z]+")))))
 
+(defun make-string-replacer-fn (match replacement)
+  (lambda (start end)
+    (interactive "r")
+    (narrow-to-region start end)
+    (goto-char 1)
+    (let ((case-fold-search nil))
+      (while (search-forward-regexp match replacement t)
+        (replace-match ""
+                       t nil)))))
+
 (defun remove-spyscope-traces (start end)
   "Remove all #spy/... calls from the region/buffer.
   Cribbed from http://wikemacs.org/wiki/Emacs_Lisp_Cookbook#Scripted_Use"
@@ -57,13 +67,15 @@
 
   (evil-leader/set-key-for-mode 'clojure-mode "h"   #'helm-clojure-headlines)
   (evil-leader/set-key-for-mode 'clojure-mode "s p" (lambda (&args) (interactive "P") (insert "#spy/p ")))
-  (evil-leader/set-key-for-mode 'clojure-mode "s d" (lambda (&args) (interactive "P") (insert "#spy/p ")))
-  (evil-leader/set-key-for-mode 'clojure-mode "s t" (lambda (&args) (interactive "P") (insert "#spy/p ")))
+  (evil-leader/set-key-for-mode 'clojure-mode "s d" (lambda (&args) (interactive "P") (insert "#spy/d ^{:marker \"\"} ") (backward-char 3)))
+  (evil-leader/set-key-for-mode 'clojure-mode "s t" (lambda (&args) (interactive "P") (insert "#spy/t ")))
 
   (fill-keymap evil-normal-state-local-map
     "M-." 'cider-jump-to-var
     "M-," 'cider-jump-back
     "C-c h" 'helm-clojure-headlines
+    "C-c C-d d" 'cider-doc
+    "C-c C-d a" 'cider-apropos-documentation
     "C-c C-d g" 'cider-grimoire-web
     "C-c C-d j" 'cider-docview-javadoc)
   ;; (define-key evil-normal-state-local-map (kbd "M-.") 'cider-jump-to-var)
