@@ -1,4 +1,5 @@
 (require 'evil)
+(require 'helm)
 (require 'evil-leader)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -24,16 +25,6 @@
                     (volatile)
                     (headline "^(\\|testing\\|^;.*[A-Za-z]+")))))
 
-(defun make-string-replacer-fn (match replacement)
-  (lambda (start end)
-    (interactive "r")
-    (narrow-to-region start end)
-    (goto-char 1)
-    (let ((case-fold-search nil))
-      (while (search-forward-regexp match replacement t)
-        (replace-match ""
-                       t nil)))))
-
 (defun remove-spyscope-traces (start end)
   "Remove all #spy/... calls from the region/buffer.
   Cribbed from http://wikemacs.org/wiki/Emacs_Lisp_Cookbook#Scripted_Use"
@@ -45,12 +36,6 @@
       (while (search-forward-regexp "#spy/[pdt] " nil t)
         (replace-match ""
                        t nil)))))
-
-(defun text-inserter (text)
-  "Returns a function that can be called interactively (with no args)
-  to insert the given string"
-  (lambda (&args) (interactive "P")
-    (insert text)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Minor mode definition
