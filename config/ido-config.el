@@ -2,6 +2,7 @@
 (setq ido-everywhere t)
 (ido-mode 1)
 (ido-ubiquitous-mode)
+(setq ido-use-faces nil)
 
 (setq ido-ignore-files (append
                         ido-ignore-files
