@@ -8,7 +8,6 @@
 (load "~/.emacs.d/config/pretty")
 (load "~/.emacs.d/config/hooks")
 (load "~/.emacs.d/config/latex-config")
-(load "~/.emacs.d/config/evil-patches")
 (load "~/.emacs.d/config/evil-config")
 (load "~/.emacs.d/config/evil-paredit")
 (load "~/.emacs.d/config/gui-settings")
