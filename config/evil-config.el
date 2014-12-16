@@ -31,6 +31,12 @@
       evil-leader/in-all-states t)
 (global-evil-leader-mode)
 
+;; so the deal here is that this needs to be set to something that
+;; isn't bound elsewhere, FOR NO REASON. I chose \ arbitrarily. It
+;; could also be unicode snowman (maybe). I don't even use this key, I
+;; use the leader shortcuts defined below.
+(setq evilnc-hotkey-comment-operator "\\")
+
 (evil-leader/set-key
   "ag" 'ag-project
   "ci" 'evilnc-comment-or-uncomment-lines
@@ -39,7 +45,6 @@
   "cp" 'evilnc-comment-or-uncomment-paragraphs
   "cr" 'comment-or-uncomment-region
   "cv" 'evilnc-toggle-invert-comment-line-by-line
-  "\\" 'evilnc-comment-operator
   )
 
 ; <leader> W to cleanup whitespace
