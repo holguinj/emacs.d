@@ -1,7 +1,7 @@
 (defvar my-packages
-  '(ag anaphora auctex auctex-latexmk auto-complete better-defaults change-inner cider cl cl-lib clojure-mode cm-mode company diminish eldoc elscreen ensime erc-tweet evil evil-leader evil-nerd-commenter evil-numbers evil-surround expand-region flx-ido flycheck fringe-helper ghc git-gutter+ git-gutter-fringe+ haskell-mode helm hy-mode ido-ubiquitous latex-extra latex-pretty-symbols latex-preview-pane linum-relative magit markdown-mode paredit puppet-mode pretty-lambdada projectile markdown-mode rainbow-delimiters scala-mode2 scion slamhound smex)
+  '(ag anaphora auctex auctex-latexmk auto-complete better-defaults change-inner cider cl cl-lib clojure-mode cm-mode company diminish eldoc elscreen ensime erc-tweet evil evil-leader evil-nerd-commenter evil-numbers evil-surround expand-region flx-ido flycheck fringe-helper ghc git-gutter+ git-gutter-fringe+ haskell-mode hy-mode ido-ubiquitous latex-extra latex-pretty-symbols latex-preview-pane linum-relative magit markdown-mode paredit puppet-mode pretty-lambdada projectile markdown-mode rainbow-delimiters scala-mode2 scion slamhound smex)
   "A list of packages to ensure are installed at launch.")
-;; removed ac-nrepl, clojurescript-mode
+;; removed ac-nrepl, clojurescript-mode, helm
 
 ;; M-h v package-activated-list RET
 ;; package-activated-list is a variable defined in `package.el'.
@@ -28,6 +28,12 @@
 ;; Not strictly package management, but hey:
 (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin:/usr/texbin"))
 (setq exec-path (append exec-path '("/usr/local/bin")))
+
+;; Vendored Helm
+(add-to-list 'load-path "~/.emacs.d/lib/async")
+(add-to-list 'load-path "~/.emacs.d/lib/helm")
+(require 'helm-config)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; el-get !!!
