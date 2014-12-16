@@ -19,11 +19,14 @@
 (defun helm-clojure-headlines ()
   "Display headlines for the current Clojure file."
   (interactive)
-  (helm-mode t)
   (jit-lock-fontify-now) ;; https://groups.google.com/forum/#!topic/emacs-helm/YwqsyRRHjY4
-  (helm :sources '(((name . "Clojure Headlines")
-                    (volatile)
-                    (headline "^(\\|testing\\|^;.*[A-Za-z]+")))))
+  (helm :sources (helm-build-in-buffer-source "Clojure Headlines"
+                   :data (with-helm-current-buffer
+                           (goto-char (point-min))
+                           (cl-loop while (re-search-forward "^(\\|testing\\|^;.*[a-zA-Z]+" nil t)
+                                    collect (buffer-substring (point-at-bol) (point-at-eol))))
+                   :get-line 'buffer-substring)
+        :buffer "helm-clojure-headlines"))
 
 (defun remove-spyscope-traces (start end)
   "Remove all #spy/... calls from the region/buffer.
