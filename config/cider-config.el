@@ -1,14 +1,25 @@
-;; experimentally re-enabling this:
+;; autocomplete
+(require 'auto-complete-config) ;; not sure this is necessary
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
-;; this might make the REPL prettier
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; http://stackoverflow.com/a/26809011
+(require 'ac-cider)
+(add-hook 'cider-mode-hook 'ac-flyspell-workaround)
+(add-hook 'cider-mode-hook 'ac-cider-setup)
+(add-hook 'cider-repl-mode-hook 'ac-cider-setup)
+(eval-after-load "auto-complete"
+    '(add-to-list 'ac-modes 'cider-mode))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; make the REPL prettier
 (setq cider-repl-use-clojure-font-lock t)
 
 (setq nrepl-hide-special-buffers t)
-(global-set-key (kbd "C-c n e b") 'cider-eval-buffer)
 
 ;; Pretty printing
-(add-hook 'cider-repl-mode-hook 'cider-repl-toggle-pretty-printing)
+(setq cider-repl-use-pretty-printing 't)
+;;(add-hook 'cider-repl-mode-hook 'cider-repl-toggle-pretty-printing)
 
 ;;================================================================================
 ;; Disabling ac-shit because it sucks ============================================
