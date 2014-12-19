@@ -129,6 +129,7 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
                                  (cider-result-mode . emacs)
                                  (cider-stacktrace-mode . emacs)
                                  (cider-test-report-mode . emacs)
+                                 (cider-popup-buffer-mode . emacs)
                                  (inf-clojure-mode . emacs)
 
                                  (comint-mode . emacs)
