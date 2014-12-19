@@ -35,6 +35,7 @@ tramp
 *.ido.last~
 /backups/
 elpa
+auto-save-list
 
 /places/
 /places
