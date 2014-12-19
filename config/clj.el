@@ -24,8 +24,11 @@
                    :data (with-helm-current-buffer
                            (goto-char (point-min))
                            (cl-loop while (re-search-forward "^(\\|testing\\|^;.*[a-zA-Z]+" nil t)
-                                    collect (buffer-substring (point-at-bol) (point-at-eol))))
-                   :get-line 'buffer-substring)
+                                    for line = (buffer-substring (point-at-bol) (point-at-eol))
+                                    for pos = (line-number-at-pos)
+                                    collect (propertize line 'helm-realvalue pos)))
+                   :get-line 'buffer-substring
+                   :action (lambda (c) (helm-goto-line c)))
         :buffer "helm-clojure-headlines"))
 
 (defun remove-spyscope-traces (start end)
@@ -48,6 +51,7 @@
   :lighter " ABClj"
   :keymap (let ((map (make-sparse-keymap)))
             (define-key map (kbd "C-c h") 'helm-clojure-headlines)
+            (define-key map (kbd "C-c C-d") 'ac-cider-popup-doc)
             (define-key map (kbd "C-x 3") (lambda (&args) (interactive "P") (split-window-horizontally) (helm-projectile)))
             (define-key map (kbd "C-x 2") (lambda (&args) (interactive "P") (split-window-vertically) (helm-projectile)))
             map)
@@ -61,11 +65,7 @@
   (fill-keymap evil-normal-state-local-map
     "M-." 'cider-jump-to-var
     "M-," 'cider-jump-back
-    "C-c h" 'helm-clojure-headlines
-    "C-c C-d d" 'cider-doc
-    "C-c C-d a" 'cider-apropos-documentation
-    "C-c C-d g" 'cider-grimoire-web
-    "C-c C-d j" 'cider-docview-javadoc)
+    "C-c h" 'helm-clojure-headlines)
   ;; (define-key evil-normal-state-local-map (kbd "M-.") 'cider-jump-to-var)
   (define-key evil-insert-state-local-map (kbd "RET") 'paredit-newline)
   
