@@ -38,7 +38,7 @@
 (setq evilnc-hotkey-comment-operator "\\")
 
 (evil-leader/set-key
-  "ag" 'ag-project
+  "ag" 'helm-projectile-ag
   "ci" 'evilnc-comment-or-uncomment-lines
   "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
   "ll" 'evilnc-quick-comment-or-uncomment-to-the-line
@@ -173,11 +173,11 @@ If `end' is nil `begin-or-fun' will be treated as a fun."
              "C" (lambda (arg) (interactive "P") (paredit-kill arg) (evil-insert arg))
              "I" (lambda (arg) (interactive "P") (move-beginning-of-line arg) (evil-insert arg))
              ;":" 'evil-repeat-find-char-reverse
-             "gH" 'evil-window-top
-             "gL" 'evil-window-bottom
-             "gM" 'evil-window-middle
-             "H" 'beginning-of-line
-             "L" 'end-of-line
+             ;; "gH" 'evil-window-top
+             ;; "gL" 'evil-window-bottom
+             ;; "gM" 'evil-window-middle
+;             "H" 'beginning-of-line
+;             "L" 'end-of-line
              )
 
 (fill-keymap evil-motion-state-map
