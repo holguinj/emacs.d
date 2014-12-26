@@ -1,14 +1,15 @@
 ;; Indentation
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(add-hook 'haskell-mode-hook 'turn-on-hi2)
 
 ;; Use return like a real person
 (add-hook 'haskell-mode-hook
           (lambda ()
             (define-key evil-insert-state-map (kbd "RET") 'newline)))
 
-;; F8 to navigate imports
+;; C-c M-n to navigate imports (analogy to CIDER)
 (eval-after-load 'haskell-mode
-          '(define-key haskell-mode-map [f8] 'haskell-navigate-imports))
+          '(define-key haskell-mode-map (kbd "C-c M-n") 'haskell-navigate-imports))
 
 ;; Use hasktags
 (add-to-list 'exec-path "~/.cabal/bin")
@@ -30,7 +31,7 @@
   (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)))
 (eval-after-load 'haskell-cabal '(progn
   (define-key haskell-cabal-mode-map (kbd "C-`") 'haskell-interactive-bring)
-  (define-key haskell-cabal-mode-map (kbd "C-c C-k") 'haskell-interactive-ode-clear)
+  (define-key haskell-cabal-mode-map (kbd "C-c M-o") 'haskell-interactive-mode-clear)
   (define-key haskell-cabal-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
   (define-key haskell-cabal-mode-map (kbd "C-c c") 'haskell-process-cabal)))
 

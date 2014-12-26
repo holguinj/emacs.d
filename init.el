@@ -15,6 +15,7 @@
 (load "~/.emacs.d/config/clj")
 (load "~/.emacs.d/config/ag")
 (load "~/.emacs.d/config/helm")
+(load "~/.emacs.d/config/js")
 (server-start)
 
 (custom-set-variables
