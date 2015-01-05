@@ -1,6 +1,7 @@
 (require 'evil)
 (require 'helm)
 (require 'evil-leader)
+(require 'clj-refactor)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Custom functions
@@ -91,6 +92,16 @@
   ;; preserve "proper" two-space indentation when functions are on their own lines
 ;  (setq lisp-indent-offset 2)
   )
+
+;; cribbed from http://emacs-fu.blogspot.com/2008/12/highlighting-todo-fixme-and-friends.html
+(add-hook 'clojure-mode-hook
+               (lambda ()
+                (font-lock-add-keywords nil
+                 '(("\\<\\(FIXME\\|TODO\\|BUG\\):" 1 font-lock-warning-face t)))))
+
+(add-hook 'clojure-mode-hook (lambda ()
+                               (clj-refactor-mode 1)
+                               (cljr-add-keybindings-with-prefix "C-c C-r")))
 
 (add-hook 'clojure-mode-hook 'always-be-clojing-mode)
 
