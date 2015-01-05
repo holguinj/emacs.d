@@ -16,6 +16,7 @@
 (load "~/.emacs.d/config/ag")
 (load "~/.emacs.d/config/helm")
 (load "~/.emacs.d/config/js")
+(load "~/.emacs.d/config/ruby")
 (server-start)
 
 (custom-set-variables
