@@ -45,6 +45,7 @@
   "cp" 'evilnc-comment-or-uncomment-paragraphs
   "cr" 'comment-or-uncomment-region
   "cv" 'evilnc-toggle-invert-comment-line-by-line
+  "ar" 'align-regexp
   )
 
 ; <leader> W to cleanup whitespace
