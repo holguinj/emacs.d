@@ -31,6 +31,7 @@
 (defun helm-clojure-headlines ()
   "Display headlines for the current Clojure file."
   (interactive)
+  (setq helm-current-buffer (current-buffer)) ;; Fixes bug where the current buffer sometimes isn't used
   (jit-lock-fontify-now) ;; https://groups.google.com/forum/#!topic/emacs-helm/YwqsyRRHjY4
   (helm :sources (helm-build-in-buffer-source "Clojure Headlines"
                    :data (with-helm-current-buffer
