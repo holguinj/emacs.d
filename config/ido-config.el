@@ -37,4 +37,4 @@
                                    (global-set-key [(shift meta x)] 'smex-major-mode-commands)
                                    (smex-major-mode-commands)))
 ;; Use M-x for smex
-(global-set-key (kbd "M-x") 'smex)
+;; (global-set-key (kbd "M-x") 'smex) ;; commented out in favor of helm
