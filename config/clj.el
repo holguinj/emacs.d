@@ -92,8 +92,14 @@
     (\([a-z]  1))
   
   ;; preserve "proper" two-space indentation when functions are on their own lines
-;  (setq lisp-indent-offset 2)
-  )
+  ;; Use the :repl profile. If you want to add/remove Leiningen
+  ;; profiles to/from CIDER, do it in the string below (in th concat expression)
+  (setq cider-lein-parameters
+        (if (string-match-p "with-profile" cider-lein-parameters)
+            cider-lein-parameters
+            (concat "with-profile +repl " cider-lein-parameters))))
+
+
 
 ;; cribbed from http://emacs-fu.blogspot.com/2008/12/highlighting-todo-fixme-and-friends.html
 (add-hook 'clojure-mode-hook
