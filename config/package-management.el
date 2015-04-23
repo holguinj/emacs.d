@@ -6,7 +6,7 @@
 ;(require 'po-mode)
 
 (defvar my-packages
-  '(ac-cider ag anaphora auctex auctex-latexmk auto-complete better-defaults change-inner cider cl cl-lib clj-refactor clojure-mode cm-mode company coffee-mode diminish eldoc elscreen enh-ruby-mode ensime erc-tweet evil evil-leader evil-nerd-commenter evil-numbers evil-surround evil-tabs expand-region flx-ido flycheck fringe-helper ghc git-gutter+ git-gutter-fringe+ haskell-mode helm-ag helm-robe hi2 hy-mode ido-ubiquitous inf-clojure latex-extra latex-pretty-symbols latex-preview-pane linum-relative magit markdown-mode paredit puppet-mode pretty-lambdada projectile markdown-mode rainbow-delimiters robe rvm scala-mode2 scion slamhound smex)
+  '(ac-cider ag anaphora auctex auctex-latexmk auto-complete better-defaults change-inner cider cl cl-lib clj-refactor clojure-mode cm-mode company coffee-mode diminish eldoc elscreen enh-ruby-mode ensime erc-tweet evil evil-leader evil-nerd-commenter evil-numbers evil-surround evil-tabs expand-region flx-ido flycheck fringe-helper ghc git-gutter+ git-gutter-fringe+ git-timemachine haskell-mode helm-ag helm-robe hi2 hy-mode ido-ubiquitous inf-clojure latex-extra latex-pretty-symbols latex-preview-pane linum-relative magit markdown-mode paredit puppet-mode pretty-lambdada projectile markdown-mode rainbow-delimiters robe rvm scala-mode2 scion slamhound smex)
   "A list of packages to ensure are installed at launch.")
 ;; removed ac-nrepl, clojurescript-mode, helm
 
