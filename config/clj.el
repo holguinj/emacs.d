@@ -6,6 +6,24 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Custom functions
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Example:
+(defun current-datestamp ()
+  ;; 2014 01 14 13 17 03
+  ;;   %Y %m %d %H %M %S
+  (let ((datestamp-format "%Y%m%d%H%M%S"))
+    (format-time-string datestamp-format (current-time))))
+
+(defun create-migration (name directory)
+  (interactive "sMigration name: \nDWhere?")
+  (let* ((base (concat (current-datestamp) "-" name))
+         (up (concat base ".up.sql"))
+         (down (concat base ".down.sql")))
+    (shell-command (concat "touch " up)) 
+    (shell-command (concat "touch " down)) 
+    (message "Created %s and %s" up down)
+    (find-file up)))
+
 (defun new-lein-project (name &optional template)
   "Interactively ask for a project and optional template name, then creates a
   Leiningen project with the parameters. Opens the project.clj file."
