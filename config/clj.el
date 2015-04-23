@@ -109,6 +109,7 @@
   ;; break -> and ->> so Dan will be happy
   (define-clojure-indent
     (try 1)
+    (try+ 1)
     (->  1)
     (->> 1)
     (\([a-z]  1))
