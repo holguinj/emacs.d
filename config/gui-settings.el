@@ -14,6 +14,19 @@
 ;; this is a fix for linum + text-sale-increase
 (set-face-attribute 'linum nil :height 160)
 
+(defun jhh--decrease-scale (args)
+  (interactive "p")
+  (text-scale-decrease)
+  ;; (let ((new-height (cond
+  ;;                    ((zerop text-scale-mode-amount) 160)
+  ;;                    ((> text-scale-mode-amount 0) 160)
+  ;;                    ((< text-scale-mode-amount 0) (- (face-attribute 'linum :height) 10)))))
+  ;;   (set-face-attribute 'linum nil :height new-height))
+  )
+
+;; Show useless whitespace
+(setq-default show-trailing-whitespace t)
+
 ;; highlight the current line
 (global-hl-line-mode)
 
