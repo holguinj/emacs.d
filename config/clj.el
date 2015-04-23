@@ -114,9 +114,11 @@
     (->> 1)
     (\([a-z]  1))
   
-  ;; preserve "proper" two-space indentation when functions are on their own lines
   ;; Use the :repl profile. If you want to add/remove Leiningen
-  ;; profiles to/from CIDER, do it in the string below (in th concat expression)
+  ;; profiles to/from CIDER, do it in the string below (in the concat expression)
+  ;; NOTE: if you don't have a :repl profile defined, Leiningen will
+  ;; emit a warning when you call cider-jack-in. As far as I can tell,
+  ;; this won't prevent CIDER from working
   (setq cider-lein-parameters
         (if (string-match-p "with-profile" cider-lein-parameters)
             cider-lein-parameters
