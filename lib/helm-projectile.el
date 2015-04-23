@@ -447,7 +447,7 @@ CANDIDATE is the selected file.  Used when no file is explicitly marked."
                   (setq helm-buffer-max-len-mode (cdr result))))))
     (candidates . helm-projectile-buffers-list-cache)
     (type . buffer)
-    (match helm-buffers-list--match-fn)
+    (match helm-buffers-match-function)
     (persistent-action . helm-buffers-list-persistent-action)
     (keymap . ,helm-buffer-map)
     (volatile)
